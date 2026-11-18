@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# 2026 rewrite
+.venv/
+*.sobj

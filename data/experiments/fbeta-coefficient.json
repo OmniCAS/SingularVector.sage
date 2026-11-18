@@ -1,0 +1,1949 @@
+{
+ "id": "fbeta-coefficient",
+ "title": "Conjecture C1: the coefficient of f[beta] (guess, tested)",
+ "question": "Is the coefficient of the root vector f[beta] in the normalised singular vector a product of linear factors, and which?",
+ "method": "Compare the computed coefficient with c * prod_{gamma in Delta_0^+, (beta,gamma^vee)>0} prod_{j<(beta,gamma^vee)} ((lam+rho,gamma^vee) - j).",
+ "scale": "35 delta+eps cases (20 of them computed only after the guess), 6 delta-eps cases",
+ "result": "Holds, with the constant rule, in all 35 delta+eps cases; for delta-eps the product holds with constant (-1)^(t-1) (it is d_empty of formula (7)).",
+ "outcome": "evidence",
+ "reproduce": "python experiments/fbeta.py",
+ "generated_at": "2026-11-18T04:45:33+00:00",
+ "software": {
+  "sage_library": "passagemath 10.8.14",
+  "python": "3.12.16"
+ },
+ "rows": [
+  {
+   "case": "osp(3|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 1"
+    }
+   ],
+   "degree": 2,
+   "computed_latex": "2\\, b_{1} (b_{1} + \\frac{1}{2})",
+   "seconds": 0.11,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(4|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 1"
+    }
+   ],
+   "degree": 2,
+   "computed_latex": "-(b_{1} + b_{2} + 1) (b_{1} - b_{2} + 1)",
+   "seconds": 0.0,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(5|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 2"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 3"
+    }
+   ],
+   "degree": 4,
+   "computed_latex": "-(2 b_{1} + 3) (b_{1} + 1) (b_{1} + b_{2} + 2) (b_{1} - b_{2} + 1)",
+   "seconds": 0.0,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(6|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 3"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 2"
+    }
+   ],
+   "degree": 4,
+   "computed_latex": "(b_{1} + b_{2} + 3) (b_{1} + b_{3} + 2) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2)",
+   "seconds": 0.01,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(7|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 4"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 3"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 5"
+    }
+   ],
+   "degree": 6,
+   "computed_latex": "(2 b_{1} + 5) (b_{1} + 2) (b_{1} + b_{2} + 4) (b_{1} + b_{3} + 3) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2)",
+   "seconds": 0.01,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(8|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 5"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 4"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 3"
+    }
+   ],
+   "degree": 6,
+   "computed_latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3)",
+   "seconds": 0.01,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(9|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 6"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 5"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 4"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 7"
+    }
+   ],
+   "degree": 8,
+   "computed_latex": "-(2 b_{1} + 7) (b_{1} + 3) (b_{1} + b_{2} + 6) (b_{1} + b_{3} + 5) (b_{1} + b_{4} + 4) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3)",
+   "seconds": 0.03,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(10|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 7"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 6"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 5"
+    },
+    {
+     "gamma": "e1-e5",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{5} + 4"
+    },
+    {
+     "gamma": "e1+e5",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{5} + 4"
+    }
+   ],
+   "degree": 8,
+   "computed_latex": "(b_{1} + b_{2} + 7) (b_{1} + b_{3} + 6) (b_{1} + b_{4} + 5) (b_{1} + b_{5} + 4) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3) (b_{1} - b_{5} + 4)",
+   "seconds": 0.03,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(11|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 8"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 7"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 6"
+    },
+    {
+     "gamma": "e1-e5",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{5} + 4"
+    },
+    {
+     "gamma": "e1+e5",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{5} + 5"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 9"
+    }
+   ],
+   "degree": 10,
+   "computed_latex": "(2 b_{1} + 9) (b_{1} + 4) (b_{1} + b_{2} + 8) (b_{1} + b_{3} + 7) (b_{1} + b_{4} + 6) (b_{1} + b_{5} + 5) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3) (b_{1} - b_{5} + 4)",
+   "seconds": 0.13,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(12|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 9"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 8"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 7"
+    },
+    {
+     "gamma": "e1-e5",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{5} + 4"
+    },
+    {
+     "gamma": "e1+e5",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{5} + 6"
+    },
+    {
+     "gamma": "e1-e6",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{6}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{6} + 5"
+    },
+    {
+     "gamma": "e1+e6",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{6}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{6} + 5"
+    }
+   ],
+   "degree": 10,
+   "computed_latex": "-(b_{1} + b_{2} + 9) (b_{1} + b_{3} + 8) (b_{1} + b_{4} + 7) (b_{1} + b_{5} + 6) (b_{1} + b_{6} + 5) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3) (b_{1} - b_{5} + 4) (b_{1} - b_{6} + 5)",
+   "seconds": 0.22,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(6|2):d1+e2",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 3"
+    },
+    {
+     "gamma": "e2-e3",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{3} + 1"
+    },
+    {
+     "gamma": "e2+e3",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{3} + 1"
+    }
+   ],
+   "degree": 3,
+   "computed_latex": "(b_{1} + b_{2} + 3) (b_{2} + b_{3} + 1) (b_{2} - b_{3} + 1)",
+   "seconds": 0.0,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(7|2):d1+e2",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 4"
+    },
+    {
+     "gamma": "e2-e3",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{3} + 1"
+    },
+    {
+     "gamma": "e2+e3",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{3} + 2"
+    },
+    {
+     "gamma": "e2",
+     "gamma_latex": "\\epsilon_{2}",
+     "n": 2,
+     "factor_latex": "2 b_{2} + 3"
+    }
+   ],
+   "degree": 5,
+   "computed_latex": "(2 b_{2} + 3) (b_{1} + b_{2} + 4) (b_{2} + 1) (b_{2} + b_{3} + 2) (b_{2} - b_{3} + 1)",
+   "seconds": 0.0,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(5|4):d2+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d2-d1",
+     "gamma_latex": "\\delta_{2}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{1} + 3"
+    },
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 2"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 3"
+    }
+   ],
+   "degree": 5,
+   "computed_latex": "(2 b_{1} + 3) (a_{1} - b_{1} - 3) (b_{1} + 1) (b_{1} + b_{2} + 2) (b_{1} - b_{2} + 1)",
+   "seconds": 0.01,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(6|4):d2+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d2-d1",
+     "gamma_latex": "\\delta_{2}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{1} + 4"
+    },
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 3"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 2"
+    }
+   ],
+   "degree": 5,
+   "computed_latex": "-(a_{1} - b_{1} - 4) (b_{1} + b_{2} + 3) (b_{1} + b_{3} + 2) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2)",
+   "seconds": 0.01,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(6|4):d1+e2",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 3"
+    },
+    {
+     "gamma": "e2-e3",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{3} + 1"
+    },
+    {
+     "gamma": "e2+e3",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{3} + 1"
+    }
+   ],
+   "degree": 3,
+   "computed_latex": "(b_{1} + b_{2} + 3) (b_{2} + b_{3} + 1) (b_{2} - b_{3} + 1)",
+   "seconds": 0.01,
+   "group": "guessed-from"
+  },
+  {
+   "case": "osp(13|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 10"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 9"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 8"
+    },
+    {
+     "gamma": "e1-e5",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{5} + 4"
+    },
+    {
+     "gamma": "e1+e5",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{5} + 7"
+    },
+    {
+     "gamma": "e1-e6",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{6}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{6} + 5"
+    },
+    {
+     "gamma": "e1+e6",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{6}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{6} + 6"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 11"
+    }
+   ],
+   "degree": 12,
+   "computed_latex": "-(2 b_{1} + 11) (b_{1} + 5) (b_{1} + b_{2} + 10) (b_{1} + b_{3} + 9) (b_{1} + b_{4} + 8) (b_{1} + b_{5} + 7) (b_{1} + b_{6} + 6) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3) (b_{1} - b_{5} + 4) (b_{1} - b_{6} + 5)",
+   "seconds": 1.06,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(13|2):d1+e4",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 8"
+    },
+    {
+     "gamma": "e2+e4",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{4} + 7"
+    },
+    {
+     "gamma": "e3+e4",
+     "gamma_latex": "\\epsilon_{3}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{3} + b_{4} + 6"
+    },
+    {
+     "gamma": "e4-e5",
+     "gamma_latex": "\\epsilon_{4}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{4} - b_{5} + 1"
+    },
+    {
+     "gamma": "e4+e5",
+     "gamma_latex": "\\epsilon_{4}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{4} + b_{5} + 4"
+    },
+    {
+     "gamma": "e4-e6",
+     "gamma_latex": "\\epsilon_{4}-\\epsilon_{6}",
+     "n": 1,
+     "factor_latex": "b_{4} - b_{6} + 2"
+    },
+    {
+     "gamma": "e4+e6",
+     "gamma_latex": "\\epsilon_{4}+\\epsilon_{6}",
+     "n": 1,
+     "factor_latex": "b_{4} + b_{6} + 3"
+    },
+    {
+     "gamma": "e4",
+     "gamma_latex": "\\epsilon_{4}",
+     "n": 2,
+     "factor_latex": "2 b_{4} + 5"
+    }
+   ],
+   "degree": 9,
+   "computed_latex": "-(2 b_{4} + 5) (b_{1} + b_{4} + 8) (b_{2} + b_{4} + 7) (b_{3} + b_{4} + 6) (b_{4} + 2) (b_{4} + b_{5} + 4) (b_{4} + b_{6} + 3) (b_{4} - b_{5} + 1) (b_{4} - b_{6} + 2)",
+   "seconds": 0.07,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(14|2):d1+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 11"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 10"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 9"
+    },
+    {
+     "gamma": "e1-e5",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{5} + 4"
+    },
+    {
+     "gamma": "e1+e5",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{5} + 8"
+    },
+    {
+     "gamma": "e1-e6",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{6}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{6} + 5"
+    },
+    {
+     "gamma": "e1+e6",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{6}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{6} + 7"
+    },
+    {
+     "gamma": "e1-e7",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{7}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{7} + 6"
+    },
+    {
+     "gamma": "e1+e7",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{7}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{7} + 6"
+    }
+   ],
+   "degree": 12,
+   "computed_latex": "(b_{1} + b_{2} + 11) (b_{1} + b_{3} + 10) (b_{1} + b_{4} + 9) (b_{1} + b_{5} + 8) (b_{1} + b_{6} + 7) (b_{1} + b_{7} + 6) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3) (b_{1} - b_{5} + 4) (b_{1} - b_{6} + 5) (b_{1} - b_{7} + 6)",
+   "seconds": 2.35,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(14|2):d1+e7",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1+e7",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{7}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{7} + 6"
+    },
+    {
+     "gamma": "e2+e7",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{7}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{7} + 5"
+    },
+    {
+     "gamma": "e3+e7",
+     "gamma_latex": "\\epsilon_{3}+\\epsilon_{7}",
+     "n": 1,
+     "factor_latex": "b_{3} + b_{7} + 4"
+    },
+    {
+     "gamma": "e4+e7",
+     "gamma_latex": "\\epsilon_{4}+\\epsilon_{7}",
+     "n": 1,
+     "factor_latex": "b_{4} + b_{7} + 3"
+    },
+    {
+     "gamma": "e5+e7",
+     "gamma_latex": "\\epsilon_{5}+\\epsilon_{7}",
+     "n": 1,
+     "factor_latex": "b_{5} + b_{7} + 2"
+    },
+    {
+     "gamma": "e6+e7",
+     "gamma_latex": "\\epsilon_{6}+\\epsilon_{7}",
+     "n": 1,
+     "factor_latex": "b_{6} + b_{7} + 1"
+    }
+   ],
+   "degree": 6,
+   "computed_latex": "(b_{1} + b_{7} + 6) (b_{2} + b_{7} + 5) (b_{3} + b_{7} + 4) (b_{4} + b_{7} + 3) (b_{5} + b_{7} + 2) (b_{6} + b_{7} + 1)",
+   "seconds": 0.02,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(11|4):d2+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d2-d1",
+     "gamma_latex": "\\delta_{2}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{1} + 9"
+    },
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 8"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 7"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 6"
+    },
+    {
+     "gamma": "e1-e5",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{5} + 4"
+    },
+    {
+     "gamma": "e1+e5",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{5} + 5"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 9"
+    }
+   ],
+   "degree": 11,
+   "computed_latex": "-(2 b_{1} + 9) (a_{1} - b_{1} - 9) (b_{1} + 4) (b_{1} + b_{2} + 8) (b_{1} + b_{3} + 7) (b_{1} + b_{4} + 6) (b_{1} + b_{5} + 5) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3) (b_{1} - b_{5} + 4)",
+   "seconds": 0.35,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(11|4):d1+e3",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 7"
+    },
+    {
+     "gamma": "e2+e3",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{3} + 6"
+    },
+    {
+     "gamma": "e3-e4",
+     "gamma_latex": "\\epsilon_{3}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{3} - b_{4} + 1"
+    },
+    {
+     "gamma": "e3+e4",
+     "gamma_latex": "\\epsilon_{3}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{3} + b_{4} + 4"
+    },
+    {
+     "gamma": "e3-e5",
+     "gamma_latex": "\\epsilon_{3}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{3} - b_{5} + 2"
+    },
+    {
+     "gamma": "e3+e5",
+     "gamma_latex": "\\epsilon_{3}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{3} + b_{5} + 3"
+    },
+    {
+     "gamma": "e3",
+     "gamma_latex": "\\epsilon_{3}",
+     "n": 2,
+     "factor_latex": "2 b_{3} + 5"
+    }
+   ],
+   "degree": 8,
+   "computed_latex": "(2 b_{3} + 5) (b_{1} + b_{3} + 7) (b_{2} + b_{3} + 6) (b_{3} + 2) (b_{3} + b_{4} + 4) (b_{3} + b_{5} + 3) (b_{3} - b_{4} + 1) (b_{3} - b_{5} + 2)",
+   "seconds": 0.04,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(12|4):d2+e5",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d2-d1",
+     "gamma_latex": "\\delta_{2}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{5} + 6"
+    },
+    {
+     "gamma": "e1+e5",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{5} + 6"
+    },
+    {
+     "gamma": "e2+e5",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{5} + 5"
+    },
+    {
+     "gamma": "e3+e5",
+     "gamma_latex": "\\epsilon_{3}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{3} + b_{5} + 4"
+    },
+    {
+     "gamma": "e4+e5",
+     "gamma_latex": "\\epsilon_{4}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{4} + b_{5} + 3"
+    },
+    {
+     "gamma": "e5-e6",
+     "gamma_latex": "\\epsilon_{5}-\\epsilon_{6}",
+     "n": 1,
+     "factor_latex": "b_{5} - b_{6} + 1"
+    },
+    {
+     "gamma": "e5+e6",
+     "gamma_latex": "\\epsilon_{5}+\\epsilon_{6}",
+     "n": 1,
+     "factor_latex": "b_{5} + b_{6} + 1"
+    }
+   ],
+   "degree": 7,
+   "computed_latex": "(a_{1} - b_{5} - 6) (b_{1} + b_{5} + 6) (b_{2} + b_{5} + 5) (b_{3} + b_{5} + 4) (b_{4} + b_{5} + 3) (b_{5} + b_{6} + 1) (b_{5} - b_{6} + 1)",
+   "seconds": 0.03,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(9|6):d3+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d3-d2",
+     "gamma_latex": "\\delta_{3}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} + b_{1} + 6"
+    },
+    {
+     "gamma": "d3-d1",
+     "gamma_latex": "\\delta_{3}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{1} + 7"
+    },
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 6"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 5"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 4"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 7"
+    }
+   ],
+   "degree": 10,
+   "computed_latex": "-(2 b_{1} + 7) (a_{1} - b_{1} - 7) (a_{2} - b_{1} - 6) (b_{1} + 3) (b_{1} + b_{2} + 6) (b_{1} + b_{3} + 5) (b_{1} + b_{4} + 4) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3)",
+   "seconds": 0.15,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(9|6):d2+e2",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d2-d1",
+     "gamma_latex": "\\delta_{2}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{2} + 6"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 6"
+    },
+    {
+     "gamma": "e2-e3",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{3} + 1"
+    },
+    {
+     "gamma": "e2+e3",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{3} + 4"
+    },
+    {
+     "gamma": "e2-e4",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{4} + 2"
+    },
+    {
+     "gamma": "e2+e4",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{4} + 3"
+    },
+    {
+     "gamma": "e2",
+     "gamma_latex": "\\epsilon_{2}",
+     "n": 2,
+     "factor_latex": "2 b_{2} + 5"
+    }
+   ],
+   "degree": 8,
+   "computed_latex": "(2 b_{2} + 5) (a_{1} - b_{2} - 6) (b_{1} + b_{2} + 6) (b_{2} + 2) (b_{2} + b_{3} + 4) (b_{2} + b_{4} + 3) (b_{2} - b_{3} + 1) (b_{2} - b_{4} + 2)",
+   "seconds": 0.04,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(10|6):d3+e4",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d3-d2",
+     "gamma_latex": "\\delta_{3}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} + b_{4} + 4"
+    },
+    {
+     "gamma": "d3-d1",
+     "gamma_latex": "\\delta_{3}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{4} + 5"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 5"
+    },
+    {
+     "gamma": "e2+e4",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{4} + 4"
+    },
+    {
+     "gamma": "e3+e4",
+     "gamma_latex": "\\epsilon_{3}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{3} + b_{4} + 3"
+    },
+    {
+     "gamma": "e4-e5",
+     "gamma_latex": "\\epsilon_{4}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{4} - b_{5} + 1"
+    },
+    {
+     "gamma": "e4+e5",
+     "gamma_latex": "\\epsilon_{4}+\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{4} + b_{5} + 1"
+    }
+   ],
+   "degree": 7,
+   "computed_latex": "(a_{1} - b_{4} - 5) (a_{2} - b_{4} - 4) (b_{1} + b_{4} + 5) (b_{2} + b_{4} + 4) (b_{3} + b_{4} + 3) (b_{4} + b_{5} + 1) (b_{4} - b_{5} + 1)",
+   "seconds": 0.04,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(8|8):d4+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d4-d3",
+     "gamma_latex": "\\delta_{4}-\\delta_{3}",
+     "n": 1,
+     "factor_latex": "-a_{3} + b_{1} + 4"
+    },
+    {
+     "gamma": "d4-d2",
+     "gamma_latex": "\\delta_{4}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} + b_{1} + 5"
+    },
+    {
+     "gamma": "d4-d1",
+     "gamma_latex": "\\delta_{4}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{1} + 6"
+    },
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 5"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 4"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1+e4",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{4} + 3"
+    }
+   ],
+   "degree": 9,
+   "computed_latex": "(a_{1} - b_{1} - 6) (a_{2} - b_{1} - 5) (a_{3} - b_{1} - 4) (b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3)",
+   "seconds": 0.11,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(8|8):d2+e3",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d2-d1",
+     "gamma_latex": "\\delta_{2}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{3} + 4"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 4"
+    },
+    {
+     "gamma": "e2+e3",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{3} + 3"
+    },
+    {
+     "gamma": "e3-e4",
+     "gamma_latex": "\\epsilon_{3}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{3} - b_{4} + 1"
+    },
+    {
+     "gamma": "e3+e4",
+     "gamma_latex": "\\epsilon_{3}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{3} + b_{4} + 1"
+    }
+   ],
+   "degree": 5,
+   "computed_latex": "(a_{1} - b_{3} - 4) (b_{1} + b_{3} + 4) (b_{2} + b_{3} + 3) (b_{3} + b_{4} + 1) (b_{3} - b_{4} + 1)",
+   "seconds": 0.02,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(7|8):d4+e2",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d4-d3",
+     "gamma_latex": "\\delta_{4}-\\delta_{3}",
+     "n": 1,
+     "factor_latex": "-a_{3} + b_{2} + 2"
+    },
+    {
+     "gamma": "d4-d2",
+     "gamma_latex": "\\delta_{4}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} + b_{2} + 3"
+    },
+    {
+     "gamma": "d4-d1",
+     "gamma_latex": "\\delta_{4}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{2} + 4"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 4"
+    },
+    {
+     "gamma": "e2-e3",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{3} + 1"
+    },
+    {
+     "gamma": "e2+e3",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{3} + 2"
+    },
+    {
+     "gamma": "e2",
+     "gamma_latex": "\\epsilon_{2}",
+     "n": 2,
+     "factor_latex": "2 b_{2} + 3"
+    }
+   ],
+   "degree": 8,
+   "computed_latex": "-(2 b_{2} + 3) (a_{1} - b_{2} - 4) (a_{2} - b_{2} - 3) (a_{3} - b_{2} - 2) (b_{1} + b_{2} + 4) (b_{2} + 1) (b_{2} + b_{3} + 2) (b_{2} - b_{3} + 1)",
+   "seconds": 0.05,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(9|8):d3+e2",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d3-d2",
+     "gamma_latex": "\\delta_{3}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} + b_{2} + 5"
+    },
+    {
+     "gamma": "d3-d1",
+     "gamma_latex": "\\delta_{3}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{2} + 6"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 6"
+    },
+    {
+     "gamma": "e2-e3",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{3} + 1"
+    },
+    {
+     "gamma": "e2+e3",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{3} + 4"
+    },
+    {
+     "gamma": "e2-e4",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{4} + 2"
+    },
+    {
+     "gamma": "e2+e4",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{4} + 3"
+    },
+    {
+     "gamma": "e2",
+     "gamma_latex": "\\epsilon_{2}",
+     "n": 2,
+     "factor_latex": "2 b_{2} + 5"
+    }
+   ],
+   "degree": 9,
+   "computed_latex": "-(2 b_{2} + 5) (a_{1} - b_{2} - 6) (a_{2} - b_{2} - 5) (b_{1} + b_{2} + 6) (b_{2} + 2) (b_{2} + b_{3} + 4) (b_{2} + b_{4} + 3) (b_{2} - b_{3} + 1) (b_{2} - b_{4} + 2)",
+   "seconds": 0.08,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(6|10):d5+e3",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d5-d4",
+     "gamma_latex": "\\delta_{5}-\\delta_{4}",
+     "n": 1,
+     "factor_latex": "-a_{4} + b_{3} - 1"
+    },
+    {
+     "gamma": "d5-d3",
+     "gamma_latex": "\\delta_{5}-\\delta_{3}",
+     "n": 1,
+     "factor_latex": "-a_{3} + b_{3}"
+    },
+    {
+     "gamma": "d5-d2",
+     "gamma_latex": "\\delta_{5}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} + b_{3} + 1"
+    },
+    {
+     "gamma": "d5-d1",
+     "gamma_latex": "\\delta_{5}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{3} + 2"
+    },
+    {
+     "gamma": "e1+e3",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{3} + 2"
+    },
+    {
+     "gamma": "e2+e3",
+     "gamma_latex": "\\epsilon_{2}+\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} + b_{3} + 1"
+    }
+   ],
+   "degree": 6,
+   "computed_latex": "(a_{1} - b_{3} - 2) (a_{2} - b_{3} - 1) (a_{3} - b_{3}) (a_{4} - b_{3} + 1) (b_{1} + b_{3} + 2) (b_{2} + b_{3} + 1)",
+   "seconds": 0.04,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(5|10):d4+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d4-d3",
+     "gamma_latex": "\\delta_{4}-\\delta_{3}",
+     "n": 1,
+     "factor_latex": "-a_{3} + b_{1} + 1"
+    },
+    {
+     "gamma": "d4-d2",
+     "gamma_latex": "\\delta_{4}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} + b_{1} + 2"
+    },
+    {
+     "gamma": "d4-d1",
+     "gamma_latex": "\\delta_{4}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{1} + 3"
+    },
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 2"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 3"
+    }
+   ],
+   "degree": 7,
+   "computed_latex": "(2 b_{1} + 3) (a_{1} - b_{1} - 3) (a_{2} - b_{1} - 2) (a_{3} - b_{1} - 1) (b_{1} + 1) (b_{1} + b_{2} + 2) (b_{1} - b_{2} + 1)",
+   "seconds": 0.02,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(4|12):d6+e2",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "-1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d6-d5",
+     "gamma_latex": "\\delta_{6}-\\delta_{5}",
+     "n": 1,
+     "factor_latex": "-a_{5} + b_{2} - 3"
+    },
+    {
+     "gamma": "d6-d4",
+     "gamma_latex": "\\delta_{6}-\\delta_{4}",
+     "n": 1,
+     "factor_latex": "-a_{4} + b_{2} - 2"
+    },
+    {
+     "gamma": "d6-d3",
+     "gamma_latex": "\\delta_{6}-\\delta_{3}",
+     "n": 1,
+     "factor_latex": "-a_{3} + b_{2} - 1"
+    },
+    {
+     "gamma": "d6-d2",
+     "gamma_latex": "\\delta_{6}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} + b_{2}"
+    },
+    {
+     "gamma": "d6-d1",
+     "gamma_latex": "\\delta_{6}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{2} + 1"
+    },
+    {
+     "gamma": "e1+e2",
+     "gamma_latex": "\\epsilon_{1}+\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} + b_{2} + 1"
+    }
+   ],
+   "degree": 6,
+   "computed_latex": "(a_{1} - b_{2} - 1) (a_{2} - b_{2}) (a_{3} - b_{2} + 1) (a_{4} - b_{2} + 2) (a_{5} - b_{2} + 3) (b_{1} + b_{2} + 1)",
+   "seconds": 0.02,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(3|8):d4+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d4-d3",
+     "gamma_latex": "\\delta_{4}-\\delta_{3}",
+     "n": 1,
+     "factor_latex": "-a_{3} + b_{1} - 1"
+    },
+    {
+     "gamma": "d4-d2",
+     "gamma_latex": "\\delta_{4}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} + b_{1}"
+    },
+    {
+     "gamma": "d4-d1",
+     "gamma_latex": "\\delta_{4}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{1} + 1"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 1"
+    }
+   ],
+   "degree": 5,
+   "computed_latex": "-(2 b_{1} + 1) (a_{1} - b_{1} - 1) (a_{2} - b_{1}) (a_{3} - b_{1} + 1) b_{1}",
+   "seconds": 0.01,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(2|6):d3+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d3-d2",
+     "gamma_latex": "\\delta_{3}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} + b_{1} - 1"
+    },
+    {
+     "gamma": "d3-d1",
+     "gamma_latex": "\\delta_{3}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{1}"
+    }
+   ],
+   "degree": 2,
+   "computed_latex": "(a_{1} - b_{1}) (a_{2} - b_{1} + 1)",
+   "seconds": 0.0,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(3|4):d2+e1",
+   "kind": "+",
+   "product_matches": true,
+   "constant": "1/2",
+   "constant_rule_holds": true,
+   "roots": [
+    {
+     "gamma": "d2-d1",
+     "gamma_latex": "\\delta_{2}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} + b_{1} + 1"
+    },
+    {
+     "gamma": "e1",
+     "gamma_latex": "\\epsilon_{1}",
+     "n": 2,
+     "factor_latex": "2 b_{1} + 1"
+    }
+   ],
+   "degree": 3,
+   "computed_latex": "-(2 b_{1} + 1) (a_{1} - b_{1} - 1) b_{1}",
+   "seconds": 0.0,
+   "group": "fresh"
+  },
+  {
+   "case": "osp(6|2):d1-e3",
+   "kind": "-",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": null,
+   "roots": [
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e2-e3",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{3} + 1"
+    }
+   ],
+   "degree": 2,
+   "computed_latex": "(b_{1} - b_{3} + 2) (b_{2} - b_{3} + 1)",
+   "seconds": 0.0,
+   "group": "delta-minus-eps"
+  },
+  {
+   "case": "osp(8|4):d2-e4",
+   "kind": "-",
+   "product_matches": true,
+   "constant": "-1",
+   "constant_rule_holds": null,
+   "roots": [
+    {
+     "gamma": "d2-d1",
+     "gamma_latex": "\\delta_{2}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e1-e4",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{4} + 3"
+    },
+    {
+     "gamma": "e2-e4",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{4} + 2"
+    },
+    {
+     "gamma": "e3-e4",
+     "gamma_latex": "\\epsilon_{3}-\\epsilon_{4}",
+     "n": 1,
+     "factor_latex": "b_{3} - b_{4} + 1"
+    }
+   ],
+   "degree": 4,
+   "computed_latex": "(a_{1} + b_{4} - 3) (b_{1} - b_{4} + 3) (b_{2} - b_{4} + 2) (b_{3} - b_{4} + 1)",
+   "seconds": 0.01,
+   "group": "delta-minus-eps"
+  },
+  {
+   "case": "osp(9|4):d2-e3",
+   "kind": "-",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": null,
+   "roots": [
+    {
+     "gamma": "d2-d1",
+     "gamma_latex": "\\delta_{2}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e1-e3",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{3} + 2"
+    },
+    {
+     "gamma": "e2-e3",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{3}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{3} + 1"
+    }
+   ],
+   "degree": 3,
+   "computed_latex": "-(a_{1} + b_{3} - 2) (b_{1} - b_{3} + 2) (b_{2} - b_{3} + 1)",
+   "seconds": 0.01,
+   "group": "delta-minus-eps"
+  },
+  {
+   "case": "osp(7|6):d3-e2",
+   "kind": "-",
+   "product_matches": true,
+   "constant": "-1",
+   "constant_rule_holds": null,
+   "roots": [
+    {
+     "gamma": "d3-d2",
+     "gamma_latex": "\\delta_{3}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} - b_{2}"
+    },
+    {
+     "gamma": "d3-d1",
+     "gamma_latex": "\\delta_{3}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    }
+   ],
+   "degree": 3,
+   "computed_latex": "-(a_{1} + b_{2} - 1) (a_{2} + b_{2}) (b_{1} - b_{2} + 1)",
+   "seconds": 0.01,
+   "group": "delta-minus-eps"
+  },
+  {
+   "case": "osp(10|2):d1-e5",
+   "kind": "-",
+   "product_matches": true,
+   "constant": "1",
+   "constant_rule_holds": null,
+   "roots": [
+    {
+     "gamma": "e1-e5",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{5} + 4"
+    },
+    {
+     "gamma": "e2-e5",
+     "gamma_latex": "\\epsilon_{2}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{2} - b_{5} + 3"
+    },
+    {
+     "gamma": "e3-e5",
+     "gamma_latex": "\\epsilon_{3}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{3} - b_{5} + 2"
+    },
+    {
+     "gamma": "e4-e5",
+     "gamma_latex": "\\epsilon_{4}-\\epsilon_{5}",
+     "n": 1,
+     "factor_latex": "b_{4} - b_{5} + 1"
+    }
+   ],
+   "degree": 4,
+   "computed_latex": "(b_{1} - b_{5} + 4) (b_{2} - b_{5} + 3) (b_{3} - b_{5} + 2) (b_{4} - b_{5} + 1)",
+   "seconds": 0.01,
+   "group": "delta-minus-eps"
+  },
+  {
+   "case": "osp(5|8):d4-e2",
+   "kind": "-",
+   "product_matches": true,
+   "constant": "-1",
+   "constant_rule_holds": null,
+   "roots": [
+    {
+     "gamma": "d4-d3",
+     "gamma_latex": "\\delta_{4}-\\delta_{3}",
+     "n": 1,
+     "factor_latex": "-a_{3} - b_{2} - 1"
+    },
+    {
+     "gamma": "d4-d2",
+     "gamma_latex": "\\delta_{4}-\\delta_{2}",
+     "n": 1,
+     "factor_latex": "-a_{2} - b_{2}"
+    },
+    {
+     "gamma": "d4-d1",
+     "gamma_latex": "\\delta_{4}-\\delta_{1}",
+     "n": 1,
+     "factor_latex": "-a_{1} - b_{2} + 1"
+    },
+    {
+     "gamma": "e1-e2",
+     "gamma_latex": "\\epsilon_{1}-\\epsilon_{2}",
+     "n": 1,
+     "factor_latex": "b_{1} - b_{2} + 1"
+    }
+   ],
+   "degree": 4,
+   "computed_latex": "(a_{1} + b_{2} - 1) (a_{2} + b_{2}) (a_{3} + b_{2} + 1) (b_{1} - b_{2} + 1)",
+   "seconds": 0.01,
+   "group": "delta-minus-eps"
+  }
+ ],
+ "status": "conjecture (computed evidence, not a proof)"
+}

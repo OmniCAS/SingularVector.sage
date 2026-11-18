@@ -1,0 +1,7636 @@
+{
+ "id": "conjecture-8",
+ "title": "Conjecture 8 for osp, beta = delta_s + eps_t: exact computation",
+ "question": "Is the space of singular vectors of weight lam - beta in M(lam) one-dimensional for every beta-atypical lam?",
+ "method": "Symbol criterion (lam-independent ranks over QQ), exact solution over the polynomial ring of the hyperplane (constant pivots only), and the even-part reduction with divisibility by (lam + rho, beta); checks at random points.",
+ "scale": "50 algebras, 401 (algebra, root) cases; largest weight space 2625 (osp(14|2), d1+e1)",
+ "result": "All cases: for every lam, dim = 1 iff (lam + rho, beta) = 0, else 0.",
+ "outcome": "confirmed",
+ "reproduce": "python experiments/conjecture8.py --all",
+ "generated_at": "2026-11-18T04:47:45+00:00",
+ "software": {
+  "sage_library": "passagemath 10.8.14",
+  "python": "3.12.16"
+ },
+ "rows": [
+  {
+   "algebra": "osp(2|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1",
+   "dim_weight_space": 1,
+   "equations": 1,
+   "top_degree": 1,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "0",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(3|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 1",
+   "dim_weight_space": 3,
+   "equations": 3,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(4|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(4|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 1",
+   "dim_weight_space": 2,
+   "equations": 2,
+   "top_degree": 2,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "1",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(5|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 3",
+   "dim_weight_space": 11,
+   "equations": 15,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(5|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 2",
+   "dim_weight_space": 6,
+   "equations": 8,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 4",
+   "dim_weight_space": 15,
+   "equations": 23,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(6|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 3",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|2)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(7|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 5",
+   "dim_weight_space": 40,
+   "equations": 70,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(7|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 4",
+   "dim_weight_space": 22,
+   "equations": 37,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(7|2)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 3",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 6",
+   "dim_weight_space": 55,
+   "equations": 106,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(8|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 5",
+   "dim_weight_space": 30,
+   "equations": 56,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|2)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 4",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(8|2)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 3",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(9|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 7",
+   "dim_weight_space": 145,
+   "equations": 309,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.15
+  },
+  {
+   "algebra": "osp(9|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 6",
+   "dim_weight_space": 80,
+   "equations": 165,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(9|2)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 5",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(9|2)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 4",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(10|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 8",
+   "dim_weight_space": 200,
+   "equations": 462,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.22
+  },
+  {
+   "algebra": "osp(10|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 7",
+   "dim_weight_space": 110,
+   "equations": 247,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(10|2)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 6",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(10|2)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 5",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(10|2)",
+   "beta": "d1+e5",
+   "beta_latex": "\\delta_{1}+\\epsilon_{5}",
+   "hyperplane": "a1 = b5 + 4",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(11|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 9",
+   "dim_weight_space": 525,
+   "equations": 1318,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 0.83
+  },
+  {
+   "algebra": "osp(11|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 8",
+   "dim_weight_space": 290,
+   "equations": 708,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.35
+  },
+  {
+   "algebra": "osp(11|2)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 7",
+   "dim_weight_space": 160,
+   "equations": 370,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.13
+  },
+  {
+   "algebra": "osp(11|2)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 6",
+   "dim_weight_space": 88,
+   "equations": 192,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(11|2)",
+   "beta": "d1+e5",
+   "beta_latex": "\\delta_{1}+\\epsilon_{5}",
+   "hyperplane": "a1 = b5 + 5",
+   "dim_weight_space": 48,
+   "equations": 100,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(12|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 10",
+   "dim_weight_space": 725,
+   "equations": 1950,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 1.75
+  },
+  {
+   "algebra": "osp(12|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 9",
+   "dim_weight_space": 400,
+   "equations": 1049,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.61
+  },
+  {
+   "algebra": "osp(12|2)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 8",
+   "dim_weight_space": 220,
+   "equations": 549,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.22
+  },
+  {
+   "algebra": "osp(12|2)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 7",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.11
+  },
+  {
+   "algebra": "osp(12|2)",
+   "beta": "d1+e5",
+   "beta_latex": "\\delta_{1}+\\epsilon_{5}",
+   "hyperplane": "a1 = b5 + 6",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(12|2)",
+   "beta": "d1+e6",
+   "beta_latex": "\\delta_{1}+\\epsilon_{6}",
+   "hyperplane": "a1 = b6 + 5",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(13|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 11",
+   "dim_weight_space": 1900,
+   "equations": 5490,
+   "top_degree": 13,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "12",
+   "seconds": 13.69
+  },
+  {
+   "algebra": "osp(13|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 10",
+   "dim_weight_space": 1050,
+   "equations": 2961,
+   "top_degree": 12,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "11",
+   "seconds": 3.6
+  },
+  {
+   "algebra": "osp(13|2)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 9",
+   "dim_weight_space": 580,
+   "equations": 1561,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 1.12
+  },
+  {
+   "algebra": "osp(13|2)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 8",
+   "dim_weight_space": 320,
+   "equations": 820,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.42
+  },
+  {
+   "algebra": "osp(13|2)",
+   "beta": "d1+e5",
+   "beta_latex": "\\delta_{1}+\\epsilon_{5}",
+   "hyperplane": "a1 = b5 + 7",
+   "dim_weight_space": 176,
+   "equations": 428,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.17
+  },
+  {
+   "algebra": "osp(13|2)",
+   "beta": "d1+e6",
+   "beta_latex": "\\delta_{1}+\\epsilon_{6}",
+   "hyperplane": "a1 = b6 + 6",
+   "dim_weight_space": 96,
+   "equations": 224,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.11
+  },
+  {
+   "algebra": "osp(14|2)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 12",
+   "dim_weight_space": 2625,
+   "equations": 8055,
+   "top_degree": 13,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "12",
+   "seconds": 33.71
+  },
+  {
+   "algebra": "osp(14|2)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 11",
+   "dim_weight_space": 1450,
+   "equations": 4350,
+   "top_degree": 12,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "11",
+   "seconds": 9.44
+  },
+  {
+   "algebra": "osp(14|2)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 10",
+   "dim_weight_space": 800,
+   "equations": 2298,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 2.8
+  },
+  {
+   "algebra": "osp(14|2)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 9",
+   "dim_weight_space": 440,
+   "equations": 1208,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.91
+  },
+  {
+   "algebra": "osp(14|2)",
+   "beta": "d1+e5",
+   "beta_latex": "\\delta_{1}+\\epsilon_{5}",
+   "hyperplane": "a1 = b5 + 8",
+   "dim_weight_space": 240,
+   "equations": 628,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.31
+  },
+  {
+   "algebra": "osp(14|2)",
+   "beta": "d1+e6",
+   "beta_latex": "\\delta_{1}+\\epsilon_{6}",
+   "hyperplane": "a1 = b6 + 7",
+   "dim_weight_space": 128,
+   "equations": 336,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.17
+  },
+  {
+   "algebra": "osp(14|2)",
+   "beta": "d1+e7",
+   "beta_latex": "\\delta_{1}+\\epsilon_{7}",
+   "hyperplane": "a1 = b7 + 6",
+   "dim_weight_space": 64,
+   "equations": 144,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(2|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 - 1",
+   "dim_weight_space": 2,
+   "equations": 2,
+   "top_degree": 2,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "1",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(2|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1",
+   "dim_weight_space": 1,
+   "equations": 1,
+   "top_degree": 1,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "0",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(3|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1",
+   "dim_weight_space": 6,
+   "equations": 8,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(3|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 1",
+   "dim_weight_space": 3,
+   "equations": 3,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 1",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(4|4)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|4)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 1",
+   "dim_weight_space": 2,
+   "equations": 2,
+   "top_degree": 2,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "1",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(5|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 2",
+   "dim_weight_space": 22,
+   "equations": 37,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(5|4)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 1",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(5|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 3",
+   "dim_weight_space": 11,
+   "equations": 15,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(5|4)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 2",
+   "dim_weight_space": 6,
+   "equations": 8,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 3",
+   "dim_weight_space": 30,
+   "equations": 56,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(6|4)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 2",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|4)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 1",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 4",
+   "dim_weight_space": 15,
+   "equations": 23,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|4)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 3",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|4)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(7|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 4",
+   "dim_weight_space": 80,
+   "equations": 165,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.11
+  },
+  {
+   "algebra": "osp(7|4)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 3",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(7|4)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 2",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(7|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 5",
+   "dim_weight_space": 40,
+   "equations": 70,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(7|4)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 4",
+   "dim_weight_space": 22,
+   "equations": 37,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(7|4)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 3",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 5",
+   "dim_weight_space": 110,
+   "equations": 247,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.13
+  },
+  {
+   "algebra": "osp(8|4)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 4",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(8|4)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 3",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(8|4)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 2",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 6",
+   "dim_weight_space": 55,
+   "equations": 106,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(8|4)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 5",
+   "dim_weight_space": 30,
+   "equations": 56,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|4)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 4",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|4)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 3",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(9|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 6",
+   "dim_weight_space": 290,
+   "equations": 708,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.41
+  },
+  {
+   "algebra": "osp(9|4)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 5",
+   "dim_weight_space": 160,
+   "equations": 370,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.14
+  },
+  {
+   "algebra": "osp(9|4)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 4",
+   "dim_weight_space": 88,
+   "equations": 192,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(9|4)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 3",
+   "dim_weight_space": 48,
+   "equations": 100,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(9|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 7",
+   "dim_weight_space": 145,
+   "equations": 309,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.13
+  },
+  {
+   "algebra": "osp(9|4)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 6",
+   "dim_weight_space": 80,
+   "equations": 165,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(9|4)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 5",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(9|4)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 4",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(10|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 7",
+   "dim_weight_space": 400,
+   "equations": 1049,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.67
+  },
+  {
+   "algebra": "osp(10|4)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 6",
+   "dim_weight_space": 220,
+   "equations": 549,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.25
+  },
+  {
+   "algebra": "osp(10|4)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 5",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.11
+  },
+  {
+   "algebra": "osp(10|4)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 4",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(10|4)",
+   "beta": "d2+e5",
+   "beta_latex": "\\delta_{2}+\\epsilon_{5}",
+   "hyperplane": "a2 = b5 + 3",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(10|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 8",
+   "dim_weight_space": 200,
+   "equations": 462,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.22
+  },
+  {
+   "algebra": "osp(10|4)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 7",
+   "dim_weight_space": 110,
+   "equations": 247,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.11
+  },
+  {
+   "algebra": "osp(10|4)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 6",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(10|4)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 5",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(10|4)",
+   "beta": "d1+e5",
+   "beta_latex": "\\delta_{1}+\\epsilon_{5}",
+   "hyperplane": "a1 = b5 + 4",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(11|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 8",
+   "dim_weight_space": 1050,
+   "equations": 2961,
+   "top_degree": 12,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "11",
+   "seconds": 3.57
+  },
+  {
+   "algebra": "osp(11|4)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 7",
+   "dim_weight_space": 580,
+   "equations": 1561,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 1.12
+  },
+  {
+   "algebra": "osp(11|4)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 6",
+   "dim_weight_space": 320,
+   "equations": 820,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.45
+  },
+  {
+   "algebra": "osp(11|4)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 5",
+   "dim_weight_space": 176,
+   "equations": 428,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.22
+  },
+  {
+   "algebra": "osp(11|4)",
+   "beta": "d2+e5",
+   "beta_latex": "\\delta_{2}+\\epsilon_{5}",
+   "hyperplane": "a2 = b5 + 4",
+   "dim_weight_space": 96,
+   "equations": 224,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.11
+  },
+  {
+   "algebra": "osp(11|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 9",
+   "dim_weight_space": 525,
+   "equations": 1318,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 0.88
+  },
+  {
+   "algebra": "osp(11|4)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 8",
+   "dim_weight_space": 290,
+   "equations": 708,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.34
+  },
+  {
+   "algebra": "osp(11|4)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 7",
+   "dim_weight_space": 160,
+   "equations": 370,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.15
+  },
+  {
+   "algebra": "osp(11|4)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 6",
+   "dim_weight_space": 88,
+   "equations": 192,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(11|4)",
+   "beta": "d1+e5",
+   "beta_latex": "\\delta_{1}+\\epsilon_{5}",
+   "hyperplane": "a1 = b5 + 5",
+   "dim_weight_space": 48,
+   "equations": 100,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 9",
+   "dim_weight_space": 1450,
+   "equations": 4350,
+   "top_degree": 12,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "11",
+   "seconds": 7.69
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 8",
+   "dim_weight_space": 800,
+   "equations": 2298,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 2.32
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 7",
+   "dim_weight_space": 440,
+   "equations": 1208,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.76
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 6",
+   "dim_weight_space": 240,
+   "equations": 628,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.3
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d2+e5",
+   "beta_latex": "\\delta_{2}+\\epsilon_{5}",
+   "hyperplane": "a2 = b5 + 5",
+   "dim_weight_space": 128,
+   "equations": 336,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.14
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d2+e6",
+   "beta_latex": "\\delta_{2}+\\epsilon_{6}",
+   "hyperplane": "a2 = b6 + 4",
+   "dim_weight_space": 64,
+   "equations": 144,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 10",
+   "dim_weight_space": 725,
+   "equations": 1950,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 1.96
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 9",
+   "dim_weight_space": 400,
+   "equations": 1049,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.67
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 8",
+   "dim_weight_space": 220,
+   "equations": 549,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.26
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 7",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.11
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d1+e5",
+   "beta_latex": "\\delta_{1}+\\epsilon_{5}",
+   "hyperplane": "a1 = b5 + 6",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(12|4)",
+   "beta": "d1+e6",
+   "beta_latex": "\\delta_{1}+\\epsilon_{6}",
+   "hyperplane": "a1 = b6 + 5",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(2|6)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 - 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(2|6)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 - 1",
+   "dim_weight_space": 2,
+   "equations": 2,
+   "top_degree": 2,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "1",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(2|6)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1",
+   "dim_weight_space": 1,
+   "equations": 1,
+   "top_degree": 1,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "0",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(3|6)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 - 1",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(3|6)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1",
+   "dim_weight_space": 6,
+   "equations": 8,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(3|6)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 1",
+   "dim_weight_space": 3,
+   "equations": 3,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|6)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(4|6)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 - 1",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|6)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 1",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|6)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|6)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|6)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 1",
+   "dim_weight_space": 2,
+   "equations": 2,
+   "top_degree": 2,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "1",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(5|6)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 1",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(5|6)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(5|6)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 2",
+   "dim_weight_space": 22,
+   "equations": 37,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(5|6)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 1",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(5|6)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 3",
+   "dim_weight_space": 11,
+   "equations": 15,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(5|6)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 2",
+   "dim_weight_space": 6,
+   "equations": 8,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|6)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 2",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.09
+  },
+  {
+   "algebra": "osp(6|6)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 1",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(6|6)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|6)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 3",
+   "dim_weight_space": 30,
+   "equations": 56,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(6|6)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 2",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|6)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 1",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|6)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 4",
+   "dim_weight_space": 15,
+   "equations": 23,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|6)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 3",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|6)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(7|6)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 3",
+   "dim_weight_space": 160,
+   "equations": 370,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.17
+  },
+  {
+   "algebra": "osp(7|6)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 2",
+   "dim_weight_space": 88,
+   "equations": 192,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(7|6)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3 + 1",
+   "dim_weight_space": 48,
+   "equations": 100,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(7|6)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 4",
+   "dim_weight_space": 80,
+   "equations": 165,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(7|6)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 3",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(7|6)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 2",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(7|6)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 5",
+   "dim_weight_space": 40,
+   "equations": 70,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(7|6)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 4",
+   "dim_weight_space": 22,
+   "equations": 37,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(7|6)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 3",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 4",
+   "dim_weight_space": 220,
+   "equations": 549,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.26
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 3",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.1
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3 + 2",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d3+e4",
+   "beta_latex": "\\delta_{3}+\\epsilon_{4}",
+   "hyperplane": "a3 = b4 + 1",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 5",
+   "dim_weight_space": 110,
+   "equations": 247,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 4",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 3",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 2",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 6",
+   "dim_weight_space": 55,
+   "equations": 106,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 5",
+   "dim_weight_space": 30,
+   "equations": 56,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 4",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|6)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 3",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 5",
+   "dim_weight_space": 580,
+   "equations": 1561,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 1.0
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 4",
+   "dim_weight_space": 320,
+   "equations": 820,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.43
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3 + 3",
+   "dim_weight_space": 176,
+   "equations": 428,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.17
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d3+e4",
+   "beta_latex": "\\delta_{3}+\\epsilon_{4}",
+   "hyperplane": "a3 = b4 + 2",
+   "dim_weight_space": 96,
+   "equations": 224,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 6",
+   "dim_weight_space": 290,
+   "equations": 708,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.34
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 5",
+   "dim_weight_space": 160,
+   "equations": 370,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.16
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 4",
+   "dim_weight_space": 88,
+   "equations": 192,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 3",
+   "dim_weight_space": 48,
+   "equations": 100,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 7",
+   "dim_weight_space": 145,
+   "equations": 309,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.12
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 6",
+   "dim_weight_space": 80,
+   "equations": 165,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 5",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(9|6)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 4",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 6",
+   "dim_weight_space": 800,
+   "equations": 2298,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 2.08
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 5",
+   "dim_weight_space": 440,
+   "equations": 1208,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.8
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3 + 4",
+   "dim_weight_space": 240,
+   "equations": 628,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.3
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d3+e4",
+   "beta_latex": "\\delta_{3}+\\epsilon_{4}",
+   "hyperplane": "a3 = b4 + 3",
+   "dim_weight_space": 128,
+   "equations": 336,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.12
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d3+e5",
+   "beta_latex": "\\delta_{3}+\\epsilon_{5}",
+   "hyperplane": "a3 = b5 + 2",
+   "dim_weight_space": 64,
+   "equations": 144,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 7",
+   "dim_weight_space": 400,
+   "equations": 1049,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.65
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 6",
+   "dim_weight_space": 220,
+   "equations": 549,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.29
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 5",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.13
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 4",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d2+e5",
+   "beta_latex": "\\delta_{2}+\\epsilon_{5}",
+   "hyperplane": "a2 = b5 + 3",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 8",
+   "dim_weight_space": 200,
+   "equations": 462,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.27
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 7",
+   "dim_weight_space": 110,
+   "equations": 247,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.12
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 6",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 5",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(10|6)",
+   "beta": "d1+e5",
+   "beta_latex": "\\delta_{1}+\\epsilon_{5}",
+   "hyperplane": "a1 = b5 + 4",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(2|8)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 - 3",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(2|8)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 - 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(2|8)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 - 1",
+   "dim_weight_space": 2,
+   "equations": 2,
+   "top_degree": 2,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "1",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(2|8)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1",
+   "dim_weight_space": 1,
+   "equations": 1,
+   "top_degree": 1,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "0",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(3|8)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 - 2",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(3|8)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 - 1",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(3|8)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1",
+   "dim_weight_space": 6,
+   "equations": 8,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(3|8)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 1",
+   "dim_weight_space": 3,
+   "equations": 3,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|8)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 - 1",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(4|8)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 - 2",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|8)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|8)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 - 1",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|8)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 1",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|8)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|8)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|8)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 1",
+   "dim_weight_space": 2,
+   "equations": 2,
+   "top_degree": 2,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "1",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(5|8)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1",
+   "dim_weight_space": 88,
+   "equations": 192,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.13
+  },
+  {
+   "algebra": "osp(5|8)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 - 1",
+   "dim_weight_space": 48,
+   "equations": 100,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(5|8)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 1",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(5|8)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(5|8)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 2",
+   "dim_weight_space": 22,
+   "equations": 37,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(5|8)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 1",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(5|8)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 3",
+   "dim_weight_space": 11,
+   "equations": 15,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(5|8)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 2",
+   "dim_weight_space": 6,
+   "equations": 8,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 + 1",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.16
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d4+e3",
+   "beta_latex": "\\delta_{4}+\\epsilon_{3}",
+   "hyperplane": "a4 = b3 - 1",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 2",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 1",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 3",
+   "dim_weight_space": 30,
+   "equations": 56,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 2",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 1",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 4",
+   "dim_weight_space": 15,
+   "equations": 23,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 3",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|8)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 + 2",
+   "dim_weight_space": 320,
+   "equations": 820,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.5
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 + 1",
+   "dim_weight_space": 176,
+   "equations": 428,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.19
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d4+e3",
+   "beta_latex": "\\delta_{4}+\\epsilon_{3}",
+   "hyperplane": "a4 = b3",
+   "dim_weight_space": 96,
+   "equations": 224,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.09
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 3",
+   "dim_weight_space": 160,
+   "equations": 370,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.18
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 2",
+   "dim_weight_space": 88,
+   "equations": 192,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.1
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3 + 1",
+   "dim_weight_space": 48,
+   "equations": 100,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 4",
+   "dim_weight_space": 80,
+   "equations": 165,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.09
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 3",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 2",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 5",
+   "dim_weight_space": 40,
+   "equations": 70,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 4",
+   "dim_weight_space": 22,
+   "equations": 37,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(7|8)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 3",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 + 3",
+   "dim_weight_space": 440,
+   "equations": 1208,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.84
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 + 2",
+   "dim_weight_space": 240,
+   "equations": 628,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.35
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d4+e3",
+   "beta_latex": "\\delta_{4}+\\epsilon_{3}",
+   "hyperplane": "a4 = b3 + 1",
+   "dim_weight_space": 128,
+   "equations": 336,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.15
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d4+e4",
+   "beta_latex": "\\delta_{4}+\\epsilon_{4}",
+   "hyperplane": "a4 = b4",
+   "dim_weight_space": 64,
+   "equations": 144,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 4",
+   "dim_weight_space": 220,
+   "equations": 549,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.29
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 3",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.12
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3 + 2",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d3+e4",
+   "beta_latex": "\\delta_{3}+\\epsilon_{4}",
+   "hyperplane": "a3 = b4 + 1",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 5",
+   "dim_weight_space": 110,
+   "equations": 247,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.12
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 4",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 3",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 2",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 6",
+   "dim_weight_space": 55,
+   "equations": 106,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 5",
+   "dim_weight_space": 30,
+   "equations": 56,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 4",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|8)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 3",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 + 4",
+   "dim_weight_space": 1160,
+   "equations": 3412,
+   "top_degree": 12,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "11",
+   "seconds": 5.11
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 + 3",
+   "dim_weight_space": 640,
+   "equations": 1800,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 1.62
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d4+e3",
+   "beta_latex": "\\delta_{4}+\\epsilon_{3}",
+   "hyperplane": "a4 = b3 + 2",
+   "dim_weight_space": 352,
+   "equations": 944,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.63
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d4+e4",
+   "beta_latex": "\\delta_{4}+\\epsilon_{4}",
+   "hyperplane": "a4 = b4 + 1",
+   "dim_weight_space": 192,
+   "equations": 496,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.29
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 5",
+   "dim_weight_space": 580,
+   "equations": 1561,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 1.43
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 4",
+   "dim_weight_space": 320,
+   "equations": 820,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.58
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3 + 3",
+   "dim_weight_space": 176,
+   "equations": 428,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.22
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d3+e4",
+   "beta_latex": "\\delta_{3}+\\epsilon_{4}",
+   "hyperplane": "a3 = b4 + 2",
+   "dim_weight_space": 96,
+   "equations": 224,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.14
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 6",
+   "dim_weight_space": 290,
+   "equations": 708,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.54
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 5",
+   "dim_weight_space": 160,
+   "equations": 370,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.28
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 4",
+   "dim_weight_space": 88,
+   "equations": 192,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.09
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 3",
+   "dim_weight_space": 48,
+   "equations": 100,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.09
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 7",
+   "dim_weight_space": 145,
+   "equations": 309,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.19
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 6",
+   "dim_weight_space": 80,
+   "equations": 165,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.13
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 5",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(9|8)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 4",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 + 5",
+   "dim_weight_space": 1600,
+   "equations": 4996,
+   "top_degree": 12,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "11",
+   "seconds": 11.59
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 + 4",
+   "dim_weight_space": 880,
+   "equations": 2636,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 3.0
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d4+e3",
+   "beta_latex": "\\delta_{4}+\\epsilon_{3}",
+   "hyperplane": "a4 = b3 + 3",
+   "dim_weight_space": 480,
+   "equations": 1376,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 1.1
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d4+e4",
+   "beta_latex": "\\delta_{4}+\\epsilon_{4}",
+   "hyperplane": "a4 = b4 + 2",
+   "dim_weight_space": 256,
+   "equations": 736,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.39
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d4+e5",
+   "beta_latex": "\\delta_{4}+\\epsilon_{5}",
+   "hyperplane": "a4 = b5 + 1",
+   "dim_weight_space": 128,
+   "equations": 320,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.19
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 6",
+   "dim_weight_space": 800,
+   "equations": 2298,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 2.01
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 5",
+   "dim_weight_space": 440,
+   "equations": 1208,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.55
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3 + 4",
+   "dim_weight_space": 240,
+   "equations": 628,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.25
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d3+e4",
+   "beta_latex": "\\delta_{3}+\\epsilon_{4}",
+   "hyperplane": "a3 = b4 + 3",
+   "dim_weight_space": 128,
+   "equations": 336,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.11
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d3+e5",
+   "beta_latex": "\\delta_{3}+\\epsilon_{5}",
+   "hyperplane": "a3 = b5 + 2",
+   "dim_weight_space": 64,
+   "equations": 144,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 7",
+   "dim_weight_space": 400,
+   "equations": 1049,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.46
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 6",
+   "dim_weight_space": 220,
+   "equations": 549,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.22
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 5",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 4",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d2+e5",
+   "beta_latex": "\\delta_{2}+\\epsilon_{5}",
+   "hyperplane": "a2 = b5 + 3",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 8",
+   "dim_weight_space": 200,
+   "equations": 462,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.19
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 7",
+   "dim_weight_space": 110,
+   "equations": 247,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.09
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 6",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 5",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(10|8)",
+   "beta": "d1+e5",
+   "beta_latex": "\\delta_{1}+\\epsilon_{5}",
+   "hyperplane": "a1 = b5 + 4",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(2|10)",
+   "beta": "d5+e1",
+   "beta_latex": "\\delta_{5}+\\epsilon_{1}",
+   "hyperplane": "a5 = b1 - 4",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(2|10)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 - 3",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(2|10)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 - 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(2|10)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 - 1",
+   "dim_weight_space": 2,
+   "equations": 2,
+   "top_degree": 2,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "1",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(2|10)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1",
+   "dim_weight_space": 1,
+   "equations": 1,
+   "top_degree": 1,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "0",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|10)",
+   "beta": "d5+e1",
+   "beta_latex": "\\delta_{5}+\\epsilon_{1}",
+   "hyperplane": "a5 = b1 - 2",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.12
+  },
+  {
+   "algebra": "osp(4|10)",
+   "beta": "d5+e2",
+   "beta_latex": "\\delta_{5}+\\epsilon_{2}",
+   "hyperplane": "a5 = b2 - 3",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(4|10)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 - 1",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(4|10)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 - 2",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|10)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|10)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 - 1",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|10)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 1",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|10)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|10)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|10)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 1",
+   "dim_weight_space": 2,
+   "equations": 2,
+   "top_degree": 2,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "1",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(5|10)",
+   "beta": "d5+e1",
+   "beta_latex": "\\delta_{5}+\\epsilon_{1}",
+   "hyperplane": "a5 = b1 - 1",
+   "dim_weight_space": 176,
+   "equations": 428,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.26
+  },
+  {
+   "algebra": "osp(5|10)",
+   "beta": "d5+e2",
+   "beta_latex": "\\delta_{5}+\\epsilon_{2}",
+   "hyperplane": "a5 = b2 - 2",
+   "dim_weight_space": 96,
+   "equations": 224,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.09
+  },
+  {
+   "algebra": "osp(5|10)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1",
+   "dim_weight_space": 88,
+   "equations": 192,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(5|10)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 - 1",
+   "dim_weight_space": 48,
+   "equations": 100,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(5|10)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 1",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(5|10)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(5|10)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 2",
+   "dim_weight_space": 22,
+   "equations": 37,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(5|10)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 1",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(5|10)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 3",
+   "dim_weight_space": 11,
+   "equations": 15,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(5|10)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 2",
+   "dim_weight_space": 6,
+   "equations": 8,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d5+e1",
+   "beta_latex": "\\delta_{5}+\\epsilon_{1}",
+   "hyperplane": "a5 = b1",
+   "dim_weight_space": 240,
+   "equations": 628,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.37
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d5+e2",
+   "beta_latex": "\\delta_{5}+\\epsilon_{2}",
+   "hyperplane": "a5 = b2 - 1",
+   "dim_weight_space": 128,
+   "equations": 336,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.14
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d5+e3",
+   "beta_latex": "\\delta_{5}+\\epsilon_{3}",
+   "hyperplane": "a5 = b3 - 2",
+   "dim_weight_space": 64,
+   "equations": 144,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 + 1",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.14
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d4+e3",
+   "beta_latex": "\\delta_{4}+\\epsilon_{3}",
+   "hyperplane": "a4 = b3 - 1",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 2",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 1",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 3",
+   "dim_weight_space": 30,
+   "equations": 56,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 2",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 1",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 4",
+   "dim_weight_space": 15,
+   "equations": 23,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 3",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|10)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d5+e1",
+   "beta_latex": "\\delta_{5}+\\epsilon_{1}",
+   "hyperplane": "a5 = b1 + 1",
+   "dim_weight_space": 640,
+   "equations": 1800,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 1.52
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d5+e2",
+   "beta_latex": "\\delta_{5}+\\epsilon_{2}",
+   "hyperplane": "a5 = b2",
+   "dim_weight_space": 352,
+   "equations": 944,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.61
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d5+e3",
+   "beta_latex": "\\delta_{5}+\\epsilon_{3}",
+   "hyperplane": "a5 = b3 - 1",
+   "dim_weight_space": 192,
+   "equations": 496,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.29
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 + 2",
+   "dim_weight_space": 320,
+   "equations": 820,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.48
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 + 1",
+   "dim_weight_space": 176,
+   "equations": 428,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.23
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d4+e3",
+   "beta_latex": "\\delta_{4}+\\epsilon_{3}",
+   "hyperplane": "a4 = b3",
+   "dim_weight_space": 96,
+   "equations": 224,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.11
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 3",
+   "dim_weight_space": 160,
+   "equations": 370,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.29
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 2",
+   "dim_weight_space": 88,
+   "equations": 192,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.1
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3 + 1",
+   "dim_weight_space": 48,
+   "equations": 100,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 4",
+   "dim_weight_space": 80,
+   "equations": 165,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 3",
+   "dim_weight_space": 44,
+   "equations": 85,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 2",
+   "dim_weight_space": 24,
+   "equations": 44,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 5",
+   "dim_weight_space": 40,
+   "equations": 70,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 4",
+   "dim_weight_space": 22,
+   "equations": 37,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(7|10)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 3",
+   "dim_weight_space": 12,
+   "equations": 19,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d5+e1",
+   "beta_latex": "\\delta_{5}+\\epsilon_{1}",
+   "hyperplane": "a5 = b1 + 2",
+   "dim_weight_space": 880,
+   "equations": 2636,
+   "top_degree": 11,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "10",
+   "seconds": 2.97
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d5+e2",
+   "beta_latex": "\\delta_{5}+\\epsilon_{2}",
+   "hyperplane": "a5 = b2 + 1",
+   "dim_weight_space": 480,
+   "equations": 1376,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 1.05
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d5+e3",
+   "beta_latex": "\\delta_{5}+\\epsilon_{3}",
+   "hyperplane": "a5 = b3",
+   "dim_weight_space": 256,
+   "equations": 736,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.42
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d5+e4",
+   "beta_latex": "\\delta_{5}+\\epsilon_{4}",
+   "hyperplane": "a5 = b4 - 1",
+   "dim_weight_space": 128,
+   "equations": 320,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.26
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 + 3",
+   "dim_weight_space": 440,
+   "equations": 1208,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.75
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 + 2",
+   "dim_weight_space": 240,
+   "equations": 628,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.35
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d4+e3",
+   "beta_latex": "\\delta_{4}+\\epsilon_{3}",
+   "hyperplane": "a4 = b3 + 1",
+   "dim_weight_space": 128,
+   "equations": 336,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.16
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d4+e4",
+   "beta_latex": "\\delta_{4}+\\epsilon_{4}",
+   "hyperplane": "a4 = b4",
+   "dim_weight_space": 64,
+   "equations": 144,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 4",
+   "dim_weight_space": 220,
+   "equations": 549,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.3
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 3",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.12
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3 + 2",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.08
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d3+e4",
+   "beta_latex": "\\delta_{3}+\\epsilon_{4}",
+   "hyperplane": "a3 = b4 + 1",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 5",
+   "dim_weight_space": 110,
+   "equations": 247,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.12
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 4",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 3",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d2+e4",
+   "beta_latex": "\\delta_{2}+\\epsilon_{4}",
+   "hyperplane": "a2 = b4 + 2",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 6",
+   "dim_weight_space": 55,
+   "equations": 106,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.04
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 5",
+   "dim_weight_space": 30,
+   "equations": 56,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 4",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(8|10)",
+   "beta": "d1+e4",
+   "beta_latex": "\\delta_{1}+\\epsilon_{4}",
+   "hyperplane": "a1 = b4 + 3",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d6+e1",
+   "beta_latex": "\\delta_{6}+\\epsilon_{1}",
+   "hyperplane": "a6 = b1 - 3",
+   "dim_weight_space": 128,
+   "equations": 336,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.18
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d6+e2",
+   "beta_latex": "\\delta_{6}+\\epsilon_{2}",
+   "hyperplane": "a6 = b2 - 4",
+   "dim_weight_space": 64,
+   "equations": 144,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d5+e1",
+   "beta_latex": "\\delta_{5}+\\epsilon_{1}",
+   "hyperplane": "a5 = b1 - 2",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d5+e2",
+   "beta_latex": "\\delta_{5}+\\epsilon_{2}",
+   "hyperplane": "a5 = b2 - 3",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 - 1",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.03
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2 - 2",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 - 1",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 1",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(4|12)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 1",
+   "dim_weight_space": 2,
+   "equations": 2,
+   "top_degree": 2,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "1",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d6+e1",
+   "beta_latex": "\\delta_{6}+\\epsilon_{1}",
+   "hyperplane": "a6 = b1 - 1",
+   "dim_weight_space": 480,
+   "equations": 1376,
+   "top_degree": 10,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "9",
+   "seconds": 0.91
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d6+e2",
+   "beta_latex": "\\delta_{6}+\\epsilon_{2}",
+   "hyperplane": "a6 = b2 - 2",
+   "dim_weight_space": 256,
+   "equations": 736,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.34
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d6+e3",
+   "beta_latex": "\\delta_{6}+\\epsilon_{3}",
+   "hyperplane": "a6 = b3 - 3",
+   "dim_weight_space": 128,
+   "equations": 320,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.15
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d5+e1",
+   "beta_latex": "\\delta_{5}+\\epsilon_{1}",
+   "hyperplane": "a5 = b1",
+   "dim_weight_space": 240,
+   "equations": 628,
+   "top_degree": 9,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "8",
+   "seconds": 0.3
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d5+e2",
+   "beta_latex": "\\delta_{5}+\\epsilon_{2}",
+   "hyperplane": "a5 = b2 - 1",
+   "dim_weight_space": 128,
+   "equations": 336,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.14
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d5+e3",
+   "beta_latex": "\\delta_{5}+\\epsilon_{3}",
+   "hyperplane": "a5 = b3 - 2",
+   "dim_weight_space": 64,
+   "equations": 144,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.06
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d4+e1",
+   "beta_latex": "\\delta_{4}+\\epsilon_{1}",
+   "hyperplane": "a4 = b1 + 1",
+   "dim_weight_space": 120,
+   "equations": 284,
+   "top_degree": 8,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "7",
+   "seconds": 0.1
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d4+e2",
+   "beta_latex": "\\delta_{4}+\\epsilon_{2}",
+   "hyperplane": "a4 = b2",
+   "dim_weight_space": 64,
+   "equations": 152,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.07
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d4+e3",
+   "beta_latex": "\\delta_{4}+\\epsilon_{3}",
+   "hyperplane": "a4 = b3 - 1",
+   "dim_weight_space": 32,
+   "equations": 64,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d3+e1",
+   "beta_latex": "\\delta_{3}+\\epsilon_{1}",
+   "hyperplane": "a3 = b1 + 2",
+   "dim_weight_space": 60,
+   "equations": 127,
+   "top_degree": 7,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "6",
+   "seconds": 0.05
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d3+e2",
+   "beta_latex": "\\delta_{3}+\\epsilon_{2}",
+   "hyperplane": "a3 = b2 + 1",
+   "dim_weight_space": 32,
+   "equations": 68,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d3+e3",
+   "beta_latex": "\\delta_{3}+\\epsilon_{3}",
+   "hyperplane": "a3 = b3",
+   "dim_weight_space": 16,
+   "equations": 28,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d2+e1",
+   "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+   "hyperplane": "a2 = b1 + 3",
+   "dim_weight_space": 30,
+   "equations": 56,
+   "top_degree": 6,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "5",
+   "seconds": 0.02
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d2+e2",
+   "beta_latex": "\\delta_{2}+\\epsilon_{2}",
+   "hyperplane": "a2 = b2 + 2",
+   "dim_weight_space": 16,
+   "equations": 30,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d2+e3",
+   "beta_latex": "\\delta_{2}+\\epsilon_{3}",
+   "hyperplane": "a2 = b3 + 1",
+   "dim_weight_space": 8,
+   "equations": 12,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d1+e1",
+   "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+   "hyperplane": "a1 = b1 + 4",
+   "dim_weight_space": 15,
+   "equations": 23,
+   "top_degree": 5,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "4",
+   "seconds": 0.01
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d1+e2",
+   "beta_latex": "\\delta_{1}+\\epsilon_{2}",
+   "hyperplane": "a1 = b2 + 3",
+   "dim_weight_space": 8,
+   "equations": 13,
+   "top_degree": 4,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "3",
+   "seconds": 0.0
+  },
+  {
+   "algebra": "osp(6|12)",
+   "beta": "d1+e3",
+   "beta_latex": "\\delta_{1}+\\epsilon_{3}",
+   "hyperplane": "a1 = b3 + 2",
+   "dim_weight_space": 4,
+   "equations": 5,
+   "top_degree": 3,
+   "symbol_criterion": true,
+   "even_simple_roots_suffice": true,
+   "exactly_one_on_H": true,
+   "every_lambda": true,
+   "checked_at_points": true,
+   "nullity_off_H": [
+    0
+   ],
+   "solution_degree": "2",
+   "seconds": 0.0
+  }
+ ]
+}

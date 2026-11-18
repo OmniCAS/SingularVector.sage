@@ -1,0 +1,227 @@
+{
+ "id": "example-10",
+ "title": "Example 10 recomputed (osp(6|2), beta = delta_1 + eps_1)",
+ "question": "Are the 15 printed terms of Example 10 right?",
+ "method": "Root vectors from the matrices printed in Section 2.4; the unique singular vector on a = b1 + 4 written in the 15 printed monomials; exhaustive one-factor repairs of the monomials whose weight is wrong.",
+ "scale": "weight space of dimension 15; {'3': 3, '6': 2} one-factor repairs tried",
+ "result": "Monomials [3, 6] are misprinted (wrong weight); after the repair (unique up to the order of two commuting factors) all 15 printed coefficients are correct.",
+ "outcome": "confirmed",
+ "reproduce": "python experiments/example10.py",
+ "generated_at": "2026-11-18T04:45:24+00:00",
+ "software": {
+  "sage_library": "passagemath 10.8.14",
+  "python": "3.12.16"
+ },
+ "rows": [
+  {
+   "term": 1,
+   "monomial": "e3-e2 -e3-e2 e2-e1 e2-e1 e1-d",
+   "monomial_latex": "e_{\\epsilon_{3}-\\epsilon_{2}} e_{-\\epsilon_{3}-\\epsilon_{2}} e_{\\epsilon_{2}-\\epsilon_{1}} e_{\\epsilon_{2}-\\epsilon_{1}} e_{\\epsilon_{1}-\\delta}",
+   "printed_monomial": "e3-e2 -e3-e2 e2-e1 e2-e1 e1-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "1",
+   "computed_coefficient_latex": "1",
+   "equal": true
+  },
+  {
+   "term": 2,
+   "monomial": "e3-e2 -e3-e1 e2-e1 e1-d",
+   "monomial_latex": "e_{\\epsilon_{3}-\\epsilon_{2}} e_{-\\epsilon_{3}-\\epsilon_{1}} e_{\\epsilon_{2}-\\epsilon_{1}} e_{\\epsilon_{1}-\\delta}",
+   "printed_monomial": "e3-e2 -e3-e1 e2-e1 e1-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "-b_{2} - b_{3} - 2",
+   "computed_coefficient_latex": "-b_{2} - b_{3} - 2",
+   "equal": true
+  },
+  {
+   "term": 3,
+   "monomial": "-e3-e2 e3-e1 e2-e1 e1-d",
+   "monomial_latex": "e_{-\\epsilon_{3}-\\epsilon_{2}} e_{\\epsilon_{3}-\\epsilon_{1}} e_{\\epsilon_{2}-\\epsilon_{1}} e_{\\epsilon_{1}-\\delta}",
+   "printed_monomial": "-e3-e2 e3-e2 e2-e1 e1-d",
+   "monomial_misprinted": true,
+   "printed_coefficient_latex": "-b_{2} + b_{3} - 2",
+   "computed_coefficient_latex": "-b_{2} + b_{3} - 2",
+   "equal": true
+  },
+  {
+   "term": 4,
+   "monomial": "e3-e2 -e3-e2 e2-e1 e2-d",
+   "monomial_latex": "e_{\\epsilon_{3}-\\epsilon_{2}} e_{-\\epsilon_{3}-\\epsilon_{2}} e_{\\epsilon_{2}-\\epsilon_{1}} e_{\\epsilon_{2}-\\delta}",
+   "printed_monomial": "e3-e2 -e3-e2 e2-e1 e2-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "-2 b_{1} - 4",
+   "computed_coefficient_latex": "-2 b_{1} - 4",
+   "equal": true
+  },
+  {
+   "term": 5,
+   "monomial": "-e2-e1 e2-e1 e1-d",
+   "monomial_latex": "e_{-\\epsilon_{2}-\\epsilon_{1}} e_{\\epsilon_{2}-\\epsilon_{1}} e_{\\epsilon_{1}-\\delta}",
+   "printed_monomial": "-e2-e1 e2-e1 e1-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "-b_{1}^{2} + b_{3}^{2} - 3 b_{1} - b_{2} - 4",
+   "computed_coefficient_latex": "-b_{1}^{2} + b_{3}^{2} - 3 b_{1} - b_{2} - 4",
+   "equal": true
+  },
+  {
+   "term": 6,
+   "monomial": "-e3-e1 e3-e1 e1-d",
+   "monomial_latex": "e_{-\\epsilon_{3}-\\epsilon_{1}} e_{\\epsilon_{3}-\\epsilon_{1}} e_{\\epsilon_{1}-\\delta}",
+   "printed_monomial": "-e3-e1 -e3-e1 e1-d",
+   "monomial_misprinted": true,
+   "printed_coefficient_latex": "-b_{1}^{2} + b_{2}^{2} - 3 b_{1} + 3 b_{2}",
+   "computed_coefficient_latex": "-b_{1}^{2} + b_{2}^{2} - 3 b_{1} + 3 b_{2}",
+   "equal": true
+  },
+  {
+   "term": 7,
+   "monomial": "e3-e2 e2-e1 -e3-d",
+   "monomial_latex": "e_{\\epsilon_{3}-\\epsilon_{2}} e_{\\epsilon_{2}-\\epsilon_{1}} e_{-\\epsilon_{3}-\\delta}",
+   "printed_monomial": "e3-e2 e2-e1 -e3-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "b_{1}^{2} + b_{1} b_{2} + b_{1} b_{3} + b_{2} b_{3} + 5 b_{1} + 2 b_{2} + 3 b_{3} + 6",
+   "computed_coefficient_latex": "b_{1}^{2} + b_{1} b_{2} + b_{1} b_{3} + b_{2} b_{3} + 5 b_{1} + 2 b_{2} + 3 b_{3} + 6",
+   "equal": true
+  },
+  {
+   "term": 8,
+   "monomial": "-e3-e2 e2-e1 e3-d",
+   "monomial_latex": "e_{-\\epsilon_{3}-\\epsilon_{2}} e_{\\epsilon_{2}-\\epsilon_{1}} e_{\\epsilon_{3}-\\delta}",
+   "printed_monomial": "-e3-e2 e2-e1 e3-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "b_{1}^{2} + b_{1} b_{2} - b_{1} b_{3} - b_{2} b_{3} + 5 b_{1} + 2 b_{2} - 3 b_{3} + 6",
+   "computed_coefficient_latex": "b_{1}^{2} + b_{1} b_{2} - b_{1} b_{3} - b_{2} b_{3} + 5 b_{1} + 2 b_{2} - 3 b_{3} + 6",
+   "equal": true
+  },
+  {
+   "term": 9,
+   "monomial": "e3-e2 -e3-e1 e2-d",
+   "monomial_latex": "e_{\\epsilon_{3}-\\epsilon_{2}} e_{-\\epsilon_{3}-\\epsilon_{1}} e_{\\epsilon_{2}-\\delta}",
+   "printed_monomial": "e3-e2 -e3-e1 e2-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "-b_{1}^{2} + b_{1} b_{2} + b_{1} b_{3} - b_{2} b_{3} - b_{1} + 2 b_{2} + b_{3} + 2",
+   "computed_coefficient_latex": "-b_{1}^{2} + b_{1} b_{2} + b_{1} b_{3} - b_{2} b_{3} - b_{1} + 2 b_{2} + b_{3} + 2",
+   "equal": true
+  },
+  {
+   "term": 10,
+   "monomial": "-e3-e2 e3-e1 e2-d",
+   "monomial_latex": "e_{-\\epsilon_{3}-\\epsilon_{2}} e_{\\epsilon_{3}-\\epsilon_{1}} e_{\\epsilon_{2}-\\delta}",
+   "printed_monomial": "-e3-e2 e3-e1 e2-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "-b_{1}^{2} + b_{1} b_{2} - b_{1} b_{3} + b_{2} b_{3} - b_{1} + 2 b_{2} - b_{3} + 2",
+   "computed_coefficient_latex": "-b_{1}^{2} + b_{1} b_{2} - b_{1} b_{3} + b_{2} b_{3} - b_{1} + 2 b_{2} - b_{3} + 2",
+   "equal": true
+  },
+  {
+   "term": 11,
+   "monomial": "-e2-e1 e2-d",
+   "monomial_latex": "e_{-\\epsilon_{2}-\\epsilon_{1}} e_{\\epsilon_{2}-\\delta}",
+   "printed_monomial": "-e2-e1 e2-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "b_{1}^{3} - b_{1}^{2} b_{2} - b_{1} b_{3}^{2} + b_{2} b_{3}^{2} + 3 b_{1}^{2} - 2 b_{1} b_{2} - b_{3}^{2} + 4 b_{1} + 4",
+   "computed_coefficient_latex": "b_{1}^{3} - b_{1}^{2} b_{2} - b_{1} b_{3}^{2} + b_{2} b_{3}^{2} + 3 b_{1}^{2} - 2 b_{1} b_{2} - b_{3}^{2} + 4 b_{1} + 4",
+   "equal": true
+  },
+  {
+   "term": 12,
+   "monomial": "e2-e1 -e2-d",
+   "monomial_latex": "e_{\\epsilon_{2}-\\epsilon_{1}} e_{-\\epsilon_{2}-\\delta}",
+   "printed_monomial": "e2-e1 -e2-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "b_{1}^{3} + b_{1}^{2} b_{2} - b_{1} b_{3}^{2} - b_{2} b_{3}^{2} + 7 b_{1}^{2} + 4 b_{1} b_{2} - 3 b_{3}^{2} + 16 b_{1} + 4 b_{2} + 12",
+   "computed_coefficient_latex": "b_{1}^{3} + b_{1}^{2} b_{2} - b_{1} b_{3}^{2} - b_{2} b_{3}^{2} + 7 b_{1}^{2} + 4 b_{1} b_{2} - 3 b_{3}^{2} + 16 b_{1} + 4 b_{2} + 12",
+   "equal": true
+  },
+  {
+   "term": 13,
+   "monomial": "e3-e1 -e3-d",
+   "monomial_latex": "e_{\\epsilon_{3}-\\epsilon_{1}} e_{-\\epsilon_{3}-\\delta}",
+   "printed_monomial": "e3-e1 -e3-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "b_{1}^{3} - b_{1} b_{2}^{2} + b_{1}^{2} b_{3} - b_{2}^{2} b_{3} + 5 b_{1}^{2} - 3 b_{1} b_{2} - 2 b_{2}^{2} + 3 b_{1} b_{3} - 3 b_{2} b_{3} + 6 b_{1} - 6 b_{2}",
+   "computed_coefficient_latex": "b_{1}^{3} - b_{1} b_{2}^{2} + b_{1}^{2} b_{3} - b_{2}^{2} b_{3} + 5 b_{1}^{2} - 3 b_{1} b_{2} - 2 b_{2}^{2} + 3 b_{1} b_{3} - 3 b_{2} b_{3} + 6 b_{1} - 6 b_{2}",
+   "equal": true
+  },
+  {
+   "term": 14,
+   "monomial": "-e3-e1 e3-d",
+   "monomial_latex": "e_{-\\epsilon_{3}-\\epsilon_{1}} e_{\\epsilon_{3}-\\delta}",
+   "printed_monomial": "-e3-e1 e3-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "b_{1}^{3} - b_{1} b_{2}^{2} - b_{1}^{2} b_{3} + b_{2}^{2} b_{3} + 5 b_{1}^{2} - 3 b_{1} b_{2} - 2 b_{2}^{2} - 3 b_{1} b_{3} + 3 b_{2} b_{3} + 6 b_{1} - 6 b_{2}",
+   "computed_coefficient_latex": "b_{1}^{3} - b_{1} b_{2}^{2} - b_{1}^{2} b_{3} + b_{2}^{2} b_{3} + 5 b_{1}^{2} - 3 b_{1} b_{2} - 2 b_{2}^{2} - 3 b_{1} b_{3} + 3 b_{2} b_{3} + 6 b_{1} - 6 b_{2}",
+   "equal": true
+  },
+  {
+   "term": 15,
+   "monomial": "-e1-d",
+   "monomial_latex": "e_{-\\epsilon_{1}-\\delta}",
+   "printed_monomial": "-e1-d",
+   "monomial_misprinted": false,
+   "printed_coefficient_latex": "b_{1}^{4} - b_{1}^{2} b_{2}^{2} - b_{1}^{2} b_{3}^{2} + b_{2}^{2} b_{3}^{2} + 8 b_{1}^{3} - 2 b_{1}^{2} b_{2} - 4 b_{1} b_{2}^{2} - 4 b_{1} b_{3}^{2} + 2 b_{2} b_{3}^{2} + 23 b_{1}^{2} - 8 b_{1} b_{2} - 4 b_{2}^{2} - 3 b_{3}^{2} + 28 b_{1} - 8 b_{2} + 12",
+   "computed_coefficient_latex": "b_{1}^{4} - b_{1}^{2} b_{2}^{2} - b_{1}^{2} b_{3}^{2} + b_{2}^{2} b_{3}^{2} + 8 b_{1}^{3} - 2 b_{1}^{2} b_{2} - 4 b_{1} b_{2}^{2} - 4 b_{1} b_{3}^{2} + 2 b_{2} b_{3}^{2} + 23 b_{1}^{2} - 8 b_{1} b_{2} - 4 b_{2}^{2} - 3 b_{3}^{2} + 28 b_{1} - 8 b_{2} + 12",
+   "equal": true
+  }
+ ],
+ "repairs_that_work": [
+  [
+   "-e3-e2 e3-e1 e2-e1 e1-d",
+   "e3-e1 -e3-e1 e1-d"
+  ],
+  [
+   "-e3-e2 e3-e1 e2-e1 e1-d",
+   "-e3-e1 e3-e1 e1-d"
+  ]
+ ],
+ "scalars_paper_vs_generators": {
+  "e3-e2": [
+   "('T', 3, 2)",
+   "1"
+  ],
+  "e2-e1": [
+   "('T', 2, 1)",
+   "1"
+  ],
+  "e3-e1": [
+   "('T', 3, 1)",
+   "1"
+  ],
+  "-e3-e2": [
+   "('Q', 2, 3)",
+   "-1"
+  ],
+  "-e3-e1": [
+   "('Q', 1, 3)",
+   "-1"
+  ],
+  "-e2-e1": [
+   "('Q', 1, 2)",
+   "-1"
+  ],
+  "e1-d": [
+   "('T', 1, 0)",
+   "1"
+  ],
+  "e2-d": [
+   "('T', 2, 0)",
+   "1"
+  ],
+  "e3-d": [
+   "('T', 3, 0)",
+   "1"
+  ],
+  "-e1-d": [
+   "('Q', 0, 1)",
+   "-1"
+  ],
+  "-e2-d": [
+   "('Q', 0, 2)",
+   "-1"
+  ],
+  "-e3-d": [
+   "('Q', 0, 3)",
+   "-1"
+  ]
+ }
+}

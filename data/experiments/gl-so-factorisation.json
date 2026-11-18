@@ -1,0 +1,408 @@
+{
+ "id": "gl-so-factorisation",
+ "title": "The singular vector factors as gl(N) part x osp(M|2) part",
+ "question": "For beta = delta_s + eps_t in osp(M|2N), how does the singular vector depend on N and s?",
+ "method": "Compute the g_0-singular vectors over QQ[lam] for osp(M|2N) and osp(M|2); split every PBW word into its delta-delta letters, eps letters and odd letter; test that the coefficient matrix is an outer product.",
+ "scale": "8 cases",
+ "result": "In all cases the coefficient is A(delta part) * B(eps part), B = the osp(M|2) coefficient; every A is a product of linear factors in the a's (the shape of formula (7)).",
+ "outcome": "confirmed",
+ "reproduce": "python experiments/factorization.py",
+ "generated_at": "2026-11-18T04:45:27+00:00",
+ "software": {
+  "sage_library": "passagemath 10.8.14",
+  "python": "3.12.16"
+ },
+ "rows": [
+  {
+   "case": "osp(6|4):d2+e1",
+   "small": "osp(6|2):d1+e1",
+   "dim": 30,
+   "dim_small": 15,
+   "gl_rows": 2,
+   "factorises": true,
+   "A": [
+    {
+     "delta_letters": [
+      "d2-d1"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{2}-\\delta_{1}}",
+     "A_latex": "1",
+     "A_text": "1"
+    },
+    {
+     "delta_letters": [],
+     "odd_index_j": 2,
+     "delta_letters_latex": "",
+     "A_latex": "a_{2} - a_{1} + 1",
+     "A_text": "a2 - a1 + 1"
+    }
+   ],
+   "seconds": 0.11
+  },
+  {
+   "case": "osp(5|6):d3+e1",
+   "small": "osp(5|2):d1+e1",
+   "dim": 44,
+   "dim_small": 11,
+   "gl_rows": 4,
+   "factorises": true,
+   "A": [
+    {
+     "delta_letters": [
+      "d2-d1",
+      "d3-d2"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{2}-\\delta_{1}} f_{\\delta_{3}-\\delta_{2}}",
+     "A_latex": "1",
+     "A_text": "1"
+    },
+    {
+     "delta_letters": [
+      "d3-d1"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{3}-\\delta_{1}}",
+     "A_latex": "a_{3} - a_{2}",
+     "A_text": "a3 - a2"
+    },
+    {
+     "delta_letters": [
+      "d3-d2"
+     ],
+     "odd_index_j": 2,
+     "delta_letters_latex": "f_{\\delta_{3}-\\delta_{2}}",
+     "A_latex": "a_{3} - a_{1} + 2",
+     "A_text": "a3 - a1 + 2"
+    },
+    {
+     "delta_letters": [],
+     "odd_index_j": 3,
+     "delta_letters_latex": "",
+     "A_latex": "(a_{3} - a_{1} + 2) (a_{3} - a_{2} + 1)",
+     "A_text": "a3^2 - a3*a2 - a3*a1 + a2*a1 + 3*a3 - 2*a2 - a1 + 2"
+    }
+   ],
+   "seconds": 0.02
+  },
+  {
+   "case": "osp(7|4):d2+e2",
+   "small": "osp(7|2):d1+e2",
+   "dim": 44,
+   "dim_small": 22,
+   "gl_rows": 2,
+   "factorises": true,
+   "A": [
+    {
+     "delta_letters": [
+      "d2-d1"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{2}-\\delta_{1}}",
+     "A_latex": "1",
+     "A_text": "1"
+    },
+    {
+     "delta_letters": [],
+     "odd_index_j": 2,
+     "delta_letters_latex": "",
+     "A_latex": "a_{2} - a_{1} + 1",
+     "A_text": "a2 - a1 + 1"
+    }
+   ],
+   "seconds": 0.01
+  },
+  {
+   "case": "osp(6|6):d3+e2",
+   "small": "osp(6|2):d1+e2",
+   "dim": 32,
+   "dim_small": 8,
+   "gl_rows": 4,
+   "factorises": true,
+   "A": [
+    {
+     "delta_letters": [
+      "d2-d1",
+      "d3-d2"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{2}-\\delta_{1}} f_{\\delta_{3}-\\delta_{2}}",
+     "A_latex": "1",
+     "A_text": "1"
+    },
+    {
+     "delta_letters": [
+      "d3-d1"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{3}-\\delta_{1}}",
+     "A_latex": "a_{3} - a_{2}",
+     "A_text": "a3 - a2"
+    },
+    {
+     "delta_letters": [
+      "d3-d2"
+     ],
+     "odd_index_j": 2,
+     "delta_letters_latex": "f_{\\delta_{3}-\\delta_{2}}",
+     "A_latex": "a_{3} - a_{1} + 2",
+     "A_text": "a3 - a1 + 2"
+    },
+    {
+     "delta_letters": [],
+     "odd_index_j": 3,
+     "delta_letters_latex": "",
+     "A_latex": "(a_{3} - a_{1} + 2) (a_{3} - a_{2} + 1)",
+     "A_text": "a3^2 - a3*a2 - a3*a1 + a2*a1 + 3*a3 - 2*a2 - a1 + 2"
+    }
+   ],
+   "seconds": 0.02
+  },
+  {
+   "case": "osp(8|4):d2+e3",
+   "small": "osp(8|2):d1+e3",
+   "dim": 32,
+   "dim_small": 16,
+   "gl_rows": 2,
+   "factorises": true,
+   "A": [
+    {
+     "delta_letters": [
+      "d2-d1"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{2}-\\delta_{1}}",
+     "A_latex": "1",
+     "A_text": "1"
+    },
+    {
+     "delta_letters": [],
+     "odd_index_j": 2,
+     "delta_letters_latex": "",
+     "A_latex": "a_{2} - a_{1} + 1",
+     "A_text": "a2 - a1 + 1"
+    }
+   ],
+   "seconds": 0.02
+  },
+  {
+   "case": "osp(4|8):d4+e1",
+   "small": "osp(4|2):d1+e1",
+   "dim": 32,
+   "dim_small": 4,
+   "gl_rows": 8,
+   "factorises": true,
+   "A": [
+    {
+     "delta_letters": [
+      "d2-d1",
+      "d3-d2",
+      "d4-d3"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{2}-\\delta_{1}} f_{\\delta_{3}-\\delta_{2}} f_{\\delta_{4}-\\delta_{3}}",
+     "A_latex": "1",
+     "A_text": "1"
+    },
+    {
+     "delta_letters": [
+      "d2-d1",
+      "d4-d2"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{2}-\\delta_{1}} f_{\\delta_{4}-\\delta_{2}}",
+     "A_latex": "a_{4} - a_{3}",
+     "A_text": "a4 - a3"
+    },
+    {
+     "delta_letters": [
+      "d3-d1",
+      "d4-d3"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{3}-\\delta_{1}} f_{\\delta_{4}-\\delta_{3}}",
+     "A_latex": "a_{4} - a_{2} + 1",
+     "A_text": "a4 - a2 + 1"
+    },
+    {
+     "delta_letters": [
+      "d3-d2",
+      "d4-d3"
+     ],
+     "odd_index_j": 2,
+     "delta_letters_latex": "f_{\\delta_{3}-\\delta_{2}} f_{\\delta_{4}-\\delta_{3}}",
+     "A_latex": "a_{4} - a_{1} + 3",
+     "A_text": "a4 - a1 + 3"
+    },
+    {
+     "delta_letters": [
+      "d4-d1"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{4}-\\delta_{1}}",
+     "A_latex": "(a_{4} - a_{2} + 1) (a_{4} - a_{3} + 1)",
+     "A_text": "a4^2 - a4*a3 - a4*a2 + a3*a2 + 2*a4 - a3 - a2 + 1"
+    },
+    {
+     "delta_letters": [
+      "d4-d2"
+     ],
+     "odd_index_j": 2,
+     "delta_letters_latex": "f_{\\delta_{4}-\\delta_{2}}",
+     "A_latex": "(a_{4} - a_{1} + 3) (a_{4} - a_{3})",
+     "A_text": "a4^2 - a4*a3 - a4*a1 + a3*a1 + 3*a4 - 3*a3"
+    },
+    {
+     "delta_letters": [
+      "d4-d3"
+     ],
+     "odd_index_j": 3,
+     "delta_letters_latex": "f_{\\delta_{4}-\\delta_{3}}",
+     "A_latex": "(a_{4} - a_{1} + 3) (a_{4} - a_{2} + 2)",
+     "A_text": "a4^2 - a4*a2 - a4*a1 + a2*a1 + 5*a4 - 3*a2 - 2*a1 + 6"
+    },
+    {
+     "delta_letters": [],
+     "odd_index_j": 4,
+     "delta_letters_latex": "",
+     "A_latex": "(a_{4} - a_{1} + 3) (a_{4} - a_{2} + 2) (a_{4} - a_{3} + 1)",
+     "A_text": "a4^3 - a4^2*a3 - a4^2*a2 + a4*a3*a2 - a4^2*a1 + a4*a3*a1 + a4*a2*a1 - a3*a2*a1 + 6*a4^2 - 5*a4*a3 - 4*a4*a2 + 3*a3*a2 - 3*a4*a1 + 2*a3*a1 + a2*a1 + 11*a4 - 6*a3 - 3*a2 - 2*a1 + 6"
+    }
+   ],
+   "seconds": 0.02
+  },
+  {
+   "case": "osp(7|6):d3+e1",
+   "small": "osp(7|2):d1+e1",
+   "dim": 160,
+   "dim_small": 40,
+   "gl_rows": 4,
+   "factorises": true,
+   "A": [
+    {
+     "delta_letters": [
+      "d2-d1",
+      "d3-d2"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{2}-\\delta_{1}} f_{\\delta_{3}-\\delta_{2}}",
+     "A_latex": "1",
+     "A_text": "1"
+    },
+    {
+     "delta_letters": [
+      "d3-d1"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{3}-\\delta_{1}}",
+     "A_latex": "a_{3} - a_{2}",
+     "A_text": "a3 - a2"
+    },
+    {
+     "delta_letters": [
+      "d3-d2"
+     ],
+     "odd_index_j": 2,
+     "delta_letters_latex": "f_{\\delta_{3}-\\delta_{2}}",
+     "A_latex": "a_{3} - a_{1} + 2",
+     "A_text": "a3 - a1 + 2"
+    },
+    {
+     "delta_letters": [],
+     "odd_index_j": 3,
+     "delta_letters_latex": "",
+     "A_latex": "(a_{3} - a_{1} + 2) (a_{3} - a_{2} + 1)",
+     "A_text": "a3^2 - a3*a2 - a3*a1 + a2*a1 + 3*a3 - 2*a2 - a1 + 2"
+    }
+   ],
+   "seconds": 0.04
+  },
+  {
+   "case": "osp(5|8):d4+e2",
+   "small": "osp(5|2):d1+e2",
+   "dim": 48,
+   "dim_small": 6,
+   "gl_rows": 8,
+   "factorises": true,
+   "A": [
+    {
+     "delta_letters": [
+      "d2-d1",
+      "d3-d2",
+      "d4-d3"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{2}-\\delta_{1}} f_{\\delta_{3}-\\delta_{2}} f_{\\delta_{4}-\\delta_{3}}",
+     "A_latex": "1",
+     "A_text": "1"
+    },
+    {
+     "delta_letters": [
+      "d2-d1",
+      "d4-d2"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{2}-\\delta_{1}} f_{\\delta_{4}-\\delta_{2}}",
+     "A_latex": "a_{4} - a_{3}",
+     "A_text": "a4 - a3"
+    },
+    {
+     "delta_letters": [
+      "d3-d1",
+      "d4-d3"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{3}-\\delta_{1}} f_{\\delta_{4}-\\delta_{3}}",
+     "A_latex": "a_{4} - a_{2} + 1",
+     "A_text": "a4 - a2 + 1"
+    },
+    {
+     "delta_letters": [
+      "d3-d2",
+      "d4-d3"
+     ],
+     "odd_index_j": 2,
+     "delta_letters_latex": "f_{\\delta_{3}-\\delta_{2}} f_{\\delta_{4}-\\delta_{3}}",
+     "A_latex": "a_{4} - a_{1} + 3",
+     "A_text": "a4 - a1 + 3"
+    },
+    {
+     "delta_letters": [
+      "d4-d1"
+     ],
+     "odd_index_j": 1,
+     "delta_letters_latex": "f_{\\delta_{4}-\\delta_{1}}",
+     "A_latex": "(a_{4} - a_{2} + 1) (a_{4} - a_{3} + 1)",
+     "A_text": "a4^2 - a4*a3 - a4*a2 + a3*a2 + 2*a4 - a3 - a2 + 1"
+    },
+    {
+     "delta_letters": [
+      "d4-d2"
+     ],
+     "odd_index_j": 2,
+     "delta_letters_latex": "f_{\\delta_{4}-\\delta_{2}}",
+     "A_latex": "(a_{4} - a_{1} + 3) (a_{4} - a_{3})",
+     "A_text": "a4^2 - a4*a3 - a4*a1 + a3*a1 + 3*a4 - 3*a3"
+    },
+    {
+     "delta_letters": [
+      "d4-d3"
+     ],
+     "odd_index_j": 3,
+     "delta_letters_latex": "f_{\\delta_{4}-\\delta_{3}}",
+     "A_latex": "(a_{4} - a_{1} + 3) (a_{4} - a_{2} + 2)",
+     "A_text": "a4^2 - a4*a2 - a4*a1 + a2*a1 + 5*a4 - 3*a2 - 2*a1 + 6"
+    },
+    {
+     "delta_letters": [],
+     "odd_index_j": 4,
+     "delta_letters_latex": "",
+     "A_latex": "(a_{4} - a_{1} + 3) (a_{4} - a_{2} + 2) (a_{4} - a_{3} + 1)",
+     "A_text": "a4^3 - a4^2*a3 - a4^2*a2 + a4*a3*a2 - a4^2*a1 + a4*a3*a1 + a4*a2*a1 - a3*a2*a1 + 6*a4^2 - 5*a4*a3 - 4*a4*a2 + 3*a3*a2 - 3*a4*a1 + 2*a3*a1 + a2*a1 + 11*a4 - 6*a3 - 3*a2 - 2*a1 + 6"
+    }
+   ],
+   "seconds": 0.02
+  }
+ ]
+}

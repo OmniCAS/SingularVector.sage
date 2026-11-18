@@ -1,0 +1,4 @@
+passagemath-singular==10.8.14
+passagemath-repl==10.8.14
+# only for legacy/compare_with_2026.py:
+# passagemath-symbolics==10.8.14

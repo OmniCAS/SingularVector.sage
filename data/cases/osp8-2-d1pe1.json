@@ -1,0 +1,920 @@
+{
+ "id": "osp8-2-d1pe1",
+ "algebra": "osp(8|2)",
+ "algebra_latex": "\\mathfrak{osp}(8|2)",
+ "beta": "d1+e1",
+ "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+ "conventions": "generators of Defs/OSP.lean; lam = (a_N..a_1 | b_1..b_M) = lam(T a a); f_gamma = root vector of weight -gamma; PBW order: even root vectors (by height), then the odd one",
+ "rho": [
+  "-3",
+  "3",
+  "2",
+  "1",
+  "0"
+ ],
+ "rho_latex": [
+  "-3",
+  "3",
+  "2",
+  "1",
+  "0"
+ ],
+ "simple_roots_latex": [
+  "\\delta_{1}-\\epsilon_{1}",
+  "\\epsilon_{1}-\\epsilon_{2}",
+  "\\epsilon_{2}-\\epsilon_{3}",
+  "\\epsilon_{3}-\\epsilon_{4}",
+  "\\epsilon_{3}+\\epsilon_{4}"
+ ],
+ "hyperplane": {
+  "text": "a1 = b1 + 6",
+  "latex": "a_{1} = b_{1} + 6"
+ },
+ "free_variables": [
+  "b1",
+  "b2",
+  "b3",
+  "b4"
+ ],
+ "pbw_order": [
+  {
+   "name": "f[e3-e4]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}}",
+   "odd": false
+  },
+  {
+   "name": "f[e3+e4]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}}",
+   "odd": false
+  },
+  {
+   "name": "f[e2-e3]",
+   "latex": "f_{\\epsilon_{2}-\\epsilon_{3}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1-e2]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}}",
+   "odd": false
+  },
+  {
+   "name": "f[e2-e4]",
+   "latex": "f_{\\epsilon_{2}-\\epsilon_{4}}",
+   "odd": false
+  },
+  {
+   "name": "f[e2+e4]",
+   "latex": "f_{\\epsilon_{2}+\\epsilon_{4}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1-e3]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{3}}",
+   "odd": false
+  },
+  {
+   "name": "f[e2+e3]",
+   "latex": "f_{\\epsilon_{2}+\\epsilon_{3}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1-e4]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{4}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1+e4]",
+   "latex": "f_{\\epsilon_{1}+\\epsilon_{4}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1+e3]",
+   "latex": "f_{\\epsilon_{1}+\\epsilon_{3}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1+e2]",
+   "latex": "f_{\\epsilon_{1}+\\epsilon_{2}}",
+   "odd": false
+  },
+  {
+   "name": "f[2d1]",
+   "latex": "f_{2\\delta_{1}}",
+   "odd": false
+  },
+  {
+   "name": "f[d1-e1]",
+   "latex": "f_{\\delta_{1}-\\epsilon_{1}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1-e2]",
+   "latex": "f_{\\delta_{1}-\\epsilon_{2}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1-e3]",
+   "latex": "f_{\\delta_{1}-\\epsilon_{3}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1-e4]",
+   "latex": "f_{\\delta_{1}-\\epsilon_{4}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1+e4]",
+   "latex": "f_{\\delta_{1}+\\epsilon_{4}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1+e3]",
+   "latex": "f_{\\delta_{1}+\\epsilon_{3}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1+e2]",
+   "latex": "f_{\\delta_{1}+\\epsilon_{2}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1+e1]",
+   "latex": "f_{\\delta_{1}+\\epsilon_{1}}",
+   "odd": true
+  }
+ ],
+ "weight_space_dim": 55,
+ "equations": 106,
+ "top_degree": 7,
+ "symbol_blocks": {
+  "1": [
+   1,
+   1,
+   1
+  ],
+  "2": [
+   6,
+   14,
+   6
+  ],
+  "3": [
+   15,
+   34,
+   15
+  ],
+  "4": [
+   17,
+   35,
+   17
+  ],
+  "5": [
+   11,
+   17,
+   11
+  ],
+  "6": [
+   4,
+   5,
+   4
+  ],
+  "7": [
+   1,
+   0,
+   0
+  ]
+ },
+ "statements": {
+  "symbol_criterion": true,
+  "exactly_one_on_H": true,
+  "every_lambda": true
+ },
+ "normalisation": "coefficient of the word in the simple root vectors = 1",
+ "n_terms": 55,
+ "n_linear_factor_coefficients": 30,
+ "f_beta_coefficient": {
+  "text": "-b1^6 + b1^4*b2^2 + b1^4*b3^2 - b1^2*b2^2*b3^2 + b1^4*b4^2 - b1^2*b2^2*b4^2 - b1^2*b3^2*b4^2 + b2^2*b3^2*b4^2 - 18*b1^5 + 4*b1^4*b2 + 12*b1^3*b2^2 + 2*b1^4*b3 - 2*b1^2*b2^2*b3 + 12*b1^3*b3^2 - 4*b1^2*b2*b3^2 - 6*b1*b2^2*b3^2 + 12*b1^3*b4^2 - 4*b1^2*b2*b4^2 - 6*b1*b2^2*b4^2 - 2*b1^2*b3*b4^2 + 2*b2^2*b3*b4^2 - 6*b1*b3^2*b4^2 + 4*b2*b3^2*b4^2 - 130*b1^4 + 48*b1^3*b2 + 53*b1^2*b2^2 + 24*b1^3*b3 - 8*b1^2*b2*b3 - 12*b1*b2^2*b3 + 50*b1^2*b3^2 - 24*b1*b2*b3^2 - 9*b2^2*b3^2 + 49*b1^2*b4^2 - 24*b1*b2*b4^2 - 8*b2^2*b4^2 - 12*b1*b3*b4^2 + 8*b2*b3*b4^2 - 5*b3^2*b4^2 - 480*b1^3 + 212*b1^2*b2 + 102*b1*b2^2 + 100*b1^2*b3 - 48*b1*b2*b3 - 18*b2^2*b3 + 84*b1*b3^2 - 36*b2*b3^2 + 78*b1*b4^2 - 32*b2*b4^2 - 10*b3*b4^2 - 949*b1^2 + 408*b1*b2 + 72*b2^2 + 168*b1*b3 - 72*b2*b3 + 45*b3^2 + 40*b4^2 - 942*b1 + 288*b2 + 90*b3 - 360",
+  "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 + b4 + 3)*(b1 - b2 + 1)*(b1 - b3 + 2)*(b1 - b4 + 3)",
+  "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3)",
+  "degree": 6,
+  "linear_factors_only": true
+ },
+ "terms": [
+  {
+   "word": "f[e3-e4] f[e3+e4] f[e2-e3]^2 f[e1-e2]^2 f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}}^{2} f_{\\epsilon_{1}-\\epsilon_{2}}^{2} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 7,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "1",
+    "factored": "1",
+    "latex": "1",
+    "degree": 0,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e3+e4] f[e2-e3]^2 f[e1-e2] f[d1-e2]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}}^{2} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 6,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "-2*b1 - 6",
+    "factored": "-2*(b1 + 3)",
+    "latex": "-2\\, (b_{1} + 3)",
+    "degree": 1,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e3+e4] f[e2-e3] f[e1-e2] f[e1-e3] f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 6,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "-2*b2 - 6",
+    "factored": "-2*(b2 + 3)",
+    "latex": "-2\\, (b_{2} + 3)",
+    "degree": 1,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e2-e3] f[e1-e2]^2 f[e2+e4] f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}}^{2} f_{\\epsilon_{2}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 6,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "-b3 - b4 - 2",
+    "factored": "-(b3 + b4 + 2)",
+    "latex": "-(b_{3} + b_{4} + 2)",
+    "degree": 1,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e2-e3] f[e1-e2]^2 f[e2-e4] f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}}^{2} f_{\\epsilon_{2}-\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 6,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "-b3 + b4 - 2",
+    "factored": "-(b3 - b4 + 2)",
+    "latex": "-(b_{3} - b_{4} + 2)",
+    "degree": 1,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e3+e4] f[e2-e3] f[e1-e2] f[d1-e3]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\delta_{1}-\\epsilon_{3}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e3]",
+   "coefficient": {
+    "text": "2*b1^2 + 2*b1*b2 + 16*b1 + 6*b2 + 30",
+    "factored": "2*(b1 + 3)*(b1 + b2 + 5)",
+    "latex": "2\\, (b_{1} + 3) (b_{1} + b_{2} + 5)",
+    "degree": 2,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e3+e4] f[e2-e3] f[e1-e3] f[d1-e2]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "-2*b1^2 + 2*b1*b2 - 4*b1 + 6*b2 + 6",
+    "factored": "-2*(b1 + 3)*(b1 - b2 - 1)",
+    "latex": "-2\\, (b_{1} + 3) (b_{1} - b_{2} - 1)",
+    "degree": 2,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e3+e4] f[e1-e3]^2 f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{3}}^{2} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "-b1^2 + b2^2 - 5*b1 + 5*b2",
+    "factored": "-(b1 + b2 + 5)*(b1 - b2)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} - b_{2})",
+    "degree": 2,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e2-e3] f[e1-e2] f[e2+e4] f[d1-e2]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "2*b1*b3 + 2*b1*b4 + 4*b1 + 6*b3 + 6*b4 + 12",
+    "factored": "2*(b1 + 3)*(b3 + b4 + 2)",
+    "latex": "2\\, (b_{1} + 3) (b_{3} + b_{4} + 2)",
+    "degree": 2,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e2-e3] f[e1-e2] f[e1+e4] f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{1}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^2 + b2*b3 + b2*b4 + b3*b4 + 5*b1 + 2*b2 + b3 + 2*b4 + 8",
+    "factored": "b1^2 + b2*b3 + b2*b4 + b3*b4 + 5*b1 + 2*b2 + b3 + 2*b4 + 8",
+    "latex": "b_{1}^{2} + b_{2} b_{3} + b_{2} b_{4} + b_{3} b_{4} + 5 b_{1} + 2 b_{2} + b_{3} + 2 b_{4} + 8",
+    "degree": 2,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e1-e2] f[e2+e4] f[e1-e3] f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "-b1^2 + b2*b3 + b2*b4 - b3*b4 - 5*b1 + 2*b2 + 3*b3 + 2*b4",
+    "factored": "-(b1^2 - b2*b3 - b2*b4 + b3*b4 + 5*b1 - 2*b2 - 3*b3 - 2*b4)",
+    "latex": "-(b_{1}^{2} - b_{2} b_{3} - b_{2} b_{4} + b_{3} b_{4} + 5 b_{1} - 2 b_{2} - 3 b_{3} - 2 b_{4})",
+    "degree": 2,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e2-e3] f[e1-e2] f[e2-e4] f[d1-e2]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}-\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "2*b1*b3 - 2*b1*b4 + 4*b1 + 6*b3 - 6*b4 + 12",
+    "factored": "2*(b1 + 3)*(b3 - b4 + 2)",
+    "latex": "2\\, (b_{1} + 3) (b_{3} - b_{4} + 2)",
+    "degree": 2,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e2-e3] f[e1-e2] f[e1-e4] f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{1}-\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^2 + b2*b3 - b2*b4 - b3*b4 + 5*b1 + 2*b2 + b3 - 2*b4 + 8",
+    "factored": "b1^2 + b2*b3 - b2*b4 - b3*b4 + 5*b1 + 2*b2 + b3 - 2*b4 + 8",
+    "latex": "b_{1}^{2} + b_{2} b_{3} - b_{2} b_{4} - b_{3} b_{4} + 5 b_{1} + 2 b_{2} + b_{3} - 2 b_{4} + 8",
+    "degree": 2,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e1-e2] f[e2-e4] f[e1-e3] f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}-\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "-b1^2 + b2*b3 - b2*b4 + b3*b4 - 5*b1 + 2*b2 + 3*b3 - 2*b4",
+    "factored": "-(b1^2 - b2*b3 + b2*b4 - b3*b4 + 5*b1 - 2*b2 - 3*b3 + 2*b4)",
+    "latex": "-(b_{1}^{2} - b_{2} b_{3} + b_{2} b_{4} - b_{3} b_{4} + 5 b_{1} - 2 b_{2} - 3 b_{3} + 2 b_{4})",
+    "degree": 2,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e2-e3] f[e1-e2]^2 f[e2+e3] f[d1-e1]",
+   "latex": "f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}}^{2} f_{\\epsilon_{2}+\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "-b1^2 + b4^2 - 5*b1 - b3 - 8",
+    "factored": "-(b1^2 - b4^2 + 5*b1 + b3 + 8)",
+    "latex": "-(b_{1}^{2} - b_{4}^{2} + 5 b_{1} + b_{3} + 8)",
+    "degree": 2,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e1-e2]^2 f[e2-e4] f[e2+e4] f[d1-e1]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}}^{2} f_{\\epsilon_{2}-\\epsilon_{4}} f_{\\epsilon_{2}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 5,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "-b1^2 + b3^2 - 5*b1 + 3*b3 - 4",
+    "factored": "-(b1 + b3 + 4)*(b1 - b3 + 1)",
+    "latex": "-(b_{1} + b_{3} + 4) (b_{1} - b_{3} + 1)",
+    "degree": 2,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e3+e4] f[e1-e3] f[d1-e3]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{3}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e3]",
+   "coefficient": {
+    "text": "2*b1^3 - 2*b1*b2^2 + 16*b1^2 - 10*b1*b2 - 6*b2^2 + 30*b1 - 30*b2",
+    "factored": "2*(b1 + 3)*(b1 + b2 + 5)*(b1 - b2)",
+    "latex": "2\\, (b_{1} + 3) (b_{1} + b_{2} + 5) (b_{1} - b_{2})",
+    "degree": 3,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e2-e3] f[e1-e2] f[d1+e4]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\delta_{1}+\\epsilon_{4}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1+e4]",
+   "coefficient": {
+    "text": "-b1^3 - b1^2*b2 - b1^2*b3 - b1*b2*b3 - b1^2*b4 - b1*b2*b4 - b1*b3*b4 - b2*b3*b4 - 12*b1^2 - 7*b1*b2 - 8*b1*b3 - 3*b2*b3 - 9*b1*b4 - 4*b2*b4 - 5*b3*b4 - 47*b1 - 12*b2 - 15*b3 - 20*b4 - 60",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 + b4 + 3)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3)",
+    "degree": 3,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e2-e3] f[e1+e4] f[d1-e2]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "-b1^3 + b1^2*b2 + b1^2*b3 - b1*b2*b3 + b1^2*b4 - b1*b2*b4 - b1*b3*b4 + b2*b3*b4 - 4*b1^2 + 3*b1*b2 + 4*b1*b3 - 3*b2*b3 + 3*b1*b4 - 2*b2*b4 - b3*b4 - 3*b1 + 3*b3 + 2*b4",
+    "factored": "-(b1 - b2 + 1)*(b1^2 - b1*b3 - b1*b4 + b3*b4 + 3*b1 - 3*b3 - 2*b4)",
+    "latex": "-(b_{1} - b_{2} + 1) (b_{1}^{2} - b_{1} b_{3} - b_{1} b_{4} + b_{3} b_{4} + 3 b_{1} - 3 b_{3} - 2 b_{4})",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e1-e2] f[e2+e4] f[d1-e3]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{3}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e3]",
+   "coefficient": {
+    "text": "b1^3 + b1^2*b2 - b1^2*b3 - b1*b2*b3 - b1^2*b4 - b1*b2*b4 + b1*b3*b4 + b2*b3*b4 + 8*b1^2 + 3*b1*b2 - 8*b1*b3 - 3*b2*b3 - 7*b1*b4 - 2*b2*b4 + 5*b3*b4 + 15*b1 - 15*b3 - 10*b4",
+    "factored": "(b1 + b2 + 5)*(b1^2 - b1*b3 - b1*b4 + b3*b4 + 3*b1 - 3*b3 - 2*b4)",
+    "latex": "(b_{1} + b_{2} + 5) (b_{1}^{2} - b_{1} b_{3} - b_{1} b_{4} + b_{3} b_{4} + 3 b_{1} - 3 b_{3} - 2 b_{4})",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e2+e4] f[e1-e3] f[d1-e2]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{2}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "b1^3 - b1^2*b2 + b1^2*b3 - b1*b2*b3 + b1^2*b4 - b1*b2*b4 + b1*b3*b4 - b2*b3*b4 + 8*b1^2 - 7*b1*b2 + 2*b1*b3 - 3*b2*b3 + 3*b1*b4 - 4*b2*b4 + b3*b4 + 15*b1 - 12*b2 - 3*b3 - 2*b4",
+    "factored": "b1^3 - b1^2*b2 + b1^2*b3 - b1*b2*b3 + b1^2*b4 - b1*b2*b4 + b1*b3*b4 - b2*b3*b4 + 8*b1^2 - 7*b1*b2 + 2*b1*b3 - 3*b2*b3 + 3*b1*b4 - 4*b2*b4 + b3*b4 + 15*b1 - 12*b2 - 3*b3 - 2*b4",
+    "latex": "b_{1}^{3} - b_{1}^{2} b_{2} + b_{1}^{2} b_{3} - b_{1} b_{2} b_{3} + b_{1}^{2} b_{4} - b_{1} b_{2} b_{4} + b_{1} b_{3} b_{4} - b_{2} b_{3} b_{4} + 8 b_{1}^{2} - 7 b_{1} b_{2} + 2 b_{1} b_{3} - 3 b_{2} b_{3} + 3 b_{1} b_{4} - 4 b_{2} b_{4} + b_{3} b_{4} + 15 b_{1} - 12 b_{2} - 3 b_{3} - 2 b_{4}",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e1-e3] f[e1+e4] f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\epsilon_{1}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^2*b3 - b2^2*b3 + b1^2*b4 - b2^2*b4 + b1^2 - 2*b2^2 + 5*b1*b3 - 4*b2*b3 + 5*b1*b4 - 4*b2*b4 - b3*b4 + 5*b1 - 8*b2 + 3*b3 + 2*b4",
+    "factored": "b1^2*b3 - b2^2*b3 + b1^2*b4 - b2^2*b4 + b1^2 - 2*b2^2 + 5*b1*b3 - 4*b2*b3 + 5*b1*b4 - 4*b2*b4 - b3*b4 + 5*b1 - 8*b2 + 3*b3 + 2*b4",
+    "latex": "b_{1}^{2} b_{3} - b_{2}^{2} b_{3} + b_{1}^{2} b_{4} - b_{2}^{2} b_{4} + b_{1}^{2} - 2 b_{2}^{2} + 5 b_{1} b_{3} - 4 b_{2} b_{3} + 5 b_{1} b_{4} - 4 b_{2} b_{4} - b_{3} b_{4} + 5 b_{1} - 8 b_{2} + 3 b_{3} + 2 b_{4}",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e2-e3] f[e1-e2] f[d1-e4]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\delta_{1}-\\epsilon_{4}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e4]",
+   "coefficient": {
+    "text": "-b1^3 - b1^2*b2 - b1^2*b3 - b1*b2*b3 + b1^2*b4 + b1*b2*b4 + b1*b3*b4 + b2*b3*b4 - 12*b1^2 - 7*b1*b2 - 8*b1*b3 - 3*b2*b3 + 9*b1*b4 + 4*b2*b4 + 5*b3*b4 - 47*b1 - 12*b2 - 15*b3 + 20*b4 - 60",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 - b4 + 3)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} - b_{4} + 3)",
+    "degree": 3,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e2-e3] f[e1-e4] f[d1-e2]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "-b1^3 + b1^2*b2 + b1^2*b3 - b1*b2*b3 - b1^2*b4 + b1*b2*b4 + b1*b3*b4 - b2*b3*b4 - 4*b1^2 + 3*b1*b2 + 4*b1*b3 - 3*b2*b3 - 3*b1*b4 + 2*b2*b4 + b3*b4 - 3*b1 + 3*b3 - 2*b4",
+    "factored": "-(b1 - b2 + 1)*(b1^2 - b1*b3 + b1*b4 - b3*b4 + 3*b1 - 3*b3 + 2*b4)",
+    "latex": "-(b_{1} - b_{2} + 1) (b_{1}^{2} - b_{1} b_{3} + b_{1} b_{4} - b_{3} b_{4} + 3 b_{1} - 3 b_{3} + 2 b_{4})",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e1-e2] f[e2-e4] f[d1-e3]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}-\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{3}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e3]",
+   "coefficient": {
+    "text": "b1^3 + b1^2*b2 - b1^2*b3 - b1*b2*b3 + b1^2*b4 + b1*b2*b4 - b1*b3*b4 - b2*b3*b4 + 8*b1^2 + 3*b1*b2 - 8*b1*b3 - 3*b2*b3 + 7*b1*b4 + 2*b2*b4 - 5*b3*b4 + 15*b1 - 15*b3 + 10*b4",
+    "factored": "(b1 + b2 + 5)*(b1^2 - b1*b3 + b1*b4 - b3*b4 + 3*b1 - 3*b3 + 2*b4)",
+    "latex": "(b_{1} + b_{2} + 5) (b_{1}^{2} - b_{1} b_{3} + b_{1} b_{4} - b_{3} b_{4} + 3 b_{1} - 3 b_{3} + 2 b_{4})",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e2-e4] f[e1-e3] f[d1-e2]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{2}-\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "b1^3 - b1^2*b2 + b1^2*b3 - b1*b2*b3 - b1^2*b4 + b1*b2*b4 - b1*b3*b4 + b2*b3*b4 + 8*b1^2 - 7*b1*b2 + 2*b1*b3 - 3*b2*b3 - 3*b1*b4 + 4*b2*b4 - b3*b4 + 15*b1 - 12*b2 - 3*b3 + 2*b4",
+    "factored": "b1^3 - b1^2*b2 + b1^2*b3 - b1*b2*b3 - b1^2*b4 + b1*b2*b4 - b1*b3*b4 + b2*b3*b4 + 8*b1^2 - 7*b1*b2 + 2*b1*b3 - 3*b2*b3 - 3*b1*b4 + 4*b2*b4 - b3*b4 + 15*b1 - 12*b2 - 3*b3 + 2*b4",
+    "latex": "b_{1}^{3} - b_{1}^{2} b_{2} + b_{1}^{2} b_{3} - b_{1} b_{2} b_{3} - b_{1}^{2} b_{4} + b_{1} b_{2} b_{4} - b_{1} b_{3} b_{4} + b_{2} b_{3} b_{4} + 8 b_{1}^{2} - 7 b_{1} b_{2} + 2 b_{1} b_{3} - 3 b_{2} b_{3} - 3 b_{1} b_{4} + 4 b_{2} b_{4} - b_{3} b_{4} + 15 b_{1} - 12 b_{2} - 3 b_{3} + 2 b_{4}",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e1-e3] f[e1-e4] f[d1-e1]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^2*b3 - b2^2*b3 - b1^2*b4 + b2^2*b4 + b1^2 - 2*b2^2 + 5*b1*b3 - 4*b2*b3 - 5*b1*b4 + 4*b2*b4 + b3*b4 + 5*b1 - 8*b2 + 3*b3 - 2*b4",
+    "factored": "b1^2*b3 - b2^2*b3 - b1^2*b4 + b2^2*b4 + b1^2 - 2*b2^2 + 5*b1*b3 - 4*b2*b3 - 5*b1*b4 + 4*b2*b4 + b3*b4 + 5*b1 - 8*b2 + 3*b3 - 2*b4",
+    "latex": "b_{1}^{2} b_{3} - b_{2}^{2} b_{3} - b_{1}^{2} b_{4} + b_{2}^{2} b_{4} + b_{1}^{2} - 2 b_{2}^{2} + 5 b_{1} b_{3} - 4 b_{2} b_{3} - 5 b_{1} b_{4} + 4 b_{2} b_{4} + b_{3} b_{4} + 5 b_{1} - 8 b_{2} + 3 b_{3} - 2 b_{4}",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e2-e3] f[e1-e2] f[e2+e3] f[d1-e2]",
+   "latex": "f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}+\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "2*b1^3 - 2*b1*b4^2 + 16*b1^2 + 2*b1*b3 - 6*b4^2 + 46*b1 + 6*b3 + 48",
+    "factored": "2*(b1 + 3)*(b1^2 - b4^2 + 5*b1 + b3 + 8)",
+    "latex": "2\\, (b_{1} + 3) (b_{1}^{2} - b_{4}^{2} + 5 b_{1} + b_{3} + 8)",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e2-e3] f[e1-e2] f[e1+e3] f[d1-e1]",
+   "latex": "f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{1}+\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^2*b2 + b1^2*b3 - b2*b4^2 - b3*b4^2 + 3*b1^2 + 5*b1*b2 + 5*b1*b3 + b2*b3 - 2*b4^2 + 15*b1 + 8*b2 + 7*b3 + 20",
+    "factored": "b1^2*b2 + b1^2*b3 - b2*b4^2 - b3*b4^2 + 3*b1^2 + 5*b1*b2 + 5*b1*b3 + b2*b3 - 2*b4^2 + 15*b1 + 8*b2 + 7*b3 + 20",
+    "latex": "b_{1}^{2} b_{2} + b_{1}^{2} b_{3} - b_{2} b_{4}^{2} - b_{3} b_{4}^{2} + 3 b_{1}^{2} + 5 b_{1} b_{2} + 5 b_{1} b_{3} + b_{2} b_{3} - 2 b_{4}^{2} + 15 b_{1} + 8 b_{2} + 7 b_{3} + 20",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e1-e2] f[e2-e4] f[e2+e4] f[d1-e2]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}-\\epsilon_{4}} f_{\\epsilon_{2}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "2*b1^3 - 2*b1*b3^2 + 16*b1^2 - 6*b1*b3 - 6*b3^2 + 38*b1 - 18*b3 + 24",
+    "factored": "2*(b1 + 3)*(b1 + b3 + 4)*(b1 - b3 + 1)",
+    "latex": "2\\, (b_{1} + 3) (b_{1} + b_{3} + 4) (b_{1} - b_{3} + 1)",
+    "degree": 3,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1-e2] f[e2-e4] f[e1+e4] f[d1-e1]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}-\\epsilon_{4}} f_{\\epsilon_{1}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^2*b2 - b2*b3^2 + b1^2*b4 - b3^2*b4 + b1^2 + 5*b1*b2 - 3*b2*b3 - b3^2 + 5*b1*b4 - 3*b3*b4 + 5*b1 + 4*b2 - 3*b3 + 4*b4 + 4",
+    "factored": "(b1 + b3 + 4)*(b1 - b3 + 1)*(b2 + b4 + 1)",
+    "latex": "(b_{1} + b_{3} + 4) (b_{1} - b_{3} + 1) (b_{2} + b_{4} + 1)",
+    "degree": 3,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1-e2] f[e2+e4] f[e1-e4] f[d1-e1]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^2*b2 - b2*b3^2 - b1^2*b4 + b3^2*b4 + b1^2 + 5*b1*b2 - 3*b2*b3 - b3^2 - 5*b1*b4 + 3*b3*b4 + 5*b1 + 4*b2 - 3*b3 - 4*b4 + 4",
+    "factored": "(b1 + b3 + 4)*(b1 - b3 + 1)*(b2 - b4 + 1)",
+    "latex": "(b_{1} + b_{3} + 4) (b_{1} - b_{3} + 1) (b_{2} - b_{4} + 1)",
+    "degree": 3,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1-e2] f[e1-e3] f[e2+e3] f[d1-e1]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\epsilon_{2}+\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 4,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^2*b2 - b1^2*b3 - b2*b4^2 + b3*b4^2 + b1^2 + 5*b1*b2 - 5*b1*b3 + b2*b3 - 2*b4^2 + 5*b1 + 8*b2 - 3*b3 + 12",
+    "factored": "b1^2*b2 - b1^2*b3 - b2*b4^2 + b3*b4^2 + b1^2 + 5*b1*b2 - 5*b1*b3 + b2*b3 - 2*b4^2 + 5*b1 + 8*b2 - 3*b3 + 12",
+    "latex": "b_{1}^{2} b_{2} - b_{1}^{2} b_{3} - b_{2} b_{4}^{2} + b_{3} b_{4}^{2} + b_{1}^{2} + 5 b_{1} b_{2} - 5 b_{1} b_{3} + b_{2} b_{3} - 2 b_{4}^{2} + 5 b_{1} + 8 b_{2} - 3 b_{3} + 12",
+    "degree": 3,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e1-e3] f[d1+e4]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\delta_{1}+\\epsilon_{4}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1+e4]",
+   "coefficient": {
+    "text": "-b1^4 + b1^2*b2^2 - b1^3*b3 + b1*b2^2*b3 - b1^3*b4 + b1*b2^2*b4 - b1^2*b3*b4 + b2^2*b3*b4 - 12*b1^3 + 5*b1^2*b2 + 7*b1*b2^2 - 8*b1^2*b3 + 5*b1*b2*b3 + 3*b2^2*b3 - 9*b1^2*b4 + 5*b1*b2*b4 + 4*b2^2*b4 - 5*b1*b3*b4 + 5*b2*b3*b4 - 47*b1^2 + 35*b1*b2 + 12*b2^2 - 15*b1*b3 + 15*b2*b3 - 20*b1*b4 + 20*b2*b4 - 60*b1 + 60*b2",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 + b4 + 3)*(b1 - b2)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{2})",
+    "degree": 4,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3-e4] f[e1+e4] f[d1-e3]",
+   "latex": "f_{\\epsilon_{3}-\\epsilon_{4}} f_{\\epsilon_{1}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{3}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e3]",
+   "coefficient": {
+    "text": "b1^4 - b1^2*b2^2 - b1^3*b3 + b1*b2^2*b3 - b1^3*b4 + b1*b2^2*b4 + b1^2*b3*b4 - b2^2*b3*b4 + 9*b1^3 - 4*b1^2*b2 - 3*b1*b2^2 - 9*b1^2*b3 + 4*b1*b2*b3 + 3*b2^2*b3 - 8*b1^2*b4 + 4*b1*b2*b4 + 2*b2^2*b4 + 6*b1*b3*b4 - 4*b2*b3*b4 + 23*b1^2 - 12*b1*b2 - 23*b1*b3 + 12*b2*b3 - 17*b1*b4 + 8*b2*b4 + 5*b3*b4 + 15*b1 - 15*b3 - 10*b4",
+    "factored": "(b1 + b2 + 5)*(b1 - b2 + 1)*(b1^2 - b1*b3 - b1*b4 + b3*b4 + 3*b1 - 3*b3 - 2*b4)",
+    "latex": "(b_{1} + b_{2} + 5) (b_{1} - b_{2} + 1) (b_{1}^{2} - b_{1} b_{3} - b_{1} b_{4} + b_{3} b_{4} + 3 b_{1} - 3 b_{3} - 2 b_{4})",
+    "degree": 4,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e1-e3] f[d1-e4]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{4}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e4]",
+   "coefficient": {
+    "text": "-b1^4 + b1^2*b2^2 - b1^3*b3 + b1*b2^2*b3 + b1^3*b4 - b1*b2^2*b4 + b1^2*b3*b4 - b2^2*b3*b4 - 12*b1^3 + 5*b1^2*b2 + 7*b1*b2^2 - 8*b1^2*b3 + 5*b1*b2*b3 + 3*b2^2*b3 + 9*b1^2*b4 - 5*b1*b2*b4 - 4*b2^2*b4 + 5*b1*b3*b4 - 5*b2*b3*b4 - 47*b1^2 + 35*b1*b2 + 12*b2^2 - 15*b1*b3 + 15*b2*b3 + 20*b1*b4 - 20*b2*b4 - 60*b1 + 60*b2",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 - b2)*(b1 - b4 + 3)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} - b_{2}) (b_{1} - b_{4} + 3)",
+    "degree": 4,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e3+e4] f[e1-e4] f[d1-e3]",
+   "latex": "f_{\\epsilon_{3}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{3}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e3]",
+   "coefficient": {
+    "text": "b1^4 - b1^2*b2^2 - b1^3*b3 + b1*b2^2*b3 + b1^3*b4 - b1*b2^2*b4 - b1^2*b3*b4 + b2^2*b3*b4 + 9*b1^3 - 4*b1^2*b2 - 3*b1*b2^2 - 9*b1^2*b3 + 4*b1*b2*b3 + 3*b2^2*b3 + 8*b1^2*b4 - 4*b1*b2*b4 - 2*b2^2*b4 - 6*b1*b3*b4 + 4*b2*b3*b4 + 23*b1^2 - 12*b1*b2 - 23*b1*b3 + 12*b2*b3 + 17*b1*b4 - 8*b2*b4 - 5*b3*b4 + 15*b1 - 15*b3 + 10*b4",
+    "factored": "(b1 + b2 + 5)*(b1 - b2 + 1)*(b1^2 - b1*b3 + b1*b4 - b3*b4 + 3*b1 - 3*b3 + 2*b4)",
+    "latex": "(b_{1} + b_{2} + 5) (b_{1} - b_{2} + 1) (b_{1}^{2} - b_{1} b_{3} + b_{1} b_{4} - b_{3} b_{4} + 3 b_{1} - 3 b_{3} + 2 b_{4})",
+    "degree": 4,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e2-e3] f[e1-e2] f[d1+e3]",
+   "latex": "f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\delta_{1}+\\epsilon_{3}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1+e3]",
+   "coefficient": {
+    "text": "-b1^4 - b1^3*b2 - b1^3*b3 - b1^2*b2*b3 + b1^2*b4^2 + b1*b2*b4^2 + b1*b3*b4^2 + b2*b3*b4^2 - 15*b1^3 - 10*b1^2*b2 - 11*b1^2*b3 - 6*b1*b2*b3 + 9*b1*b4^2 + 4*b2*b4^2 + 5*b3*b4^2 - 83*b1^2 - 33*b1*b2 - 39*b1*b3 - 9*b2*b3 + 20*b4^2 - 201*b1 - 36*b2 - 45*b3 - 180",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 + b4 + 3)*(b1 - b4 + 3)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{4} + 3)",
+    "degree": 4,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e2-e3] f[e1+e3] f[d1-e2]",
+   "latex": "f_{\\epsilon_{2}-\\epsilon_{3}} f_{\\epsilon_{1}+\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "b1^4 - b1^3*b2 - b1^3*b3 + b1^2*b2*b3 - b1^2*b4^2 + b1*b2*b4^2 + b1*b3*b4^2 - b2*b3*b4^2 + 7*b1^3 - 6*b1^2*b2 - 5*b1^2*b3 + 4*b1*b2*b3 - 3*b1*b4^2 + 2*b2*b4^2 + b3*b4^2 + 19*b1^2 - 13*b1*b2 - 7*b1*b3 + 3*b2*b3 - 2*b4^2 + 25*b1 - 12*b2 - 3*b3 + 12",
+    "factored": "(b1 - b2 + 1)*(b1^3 - b1^2*b3 - b1*b4^2 + b3*b4^2 + 6*b1^2 - 4*b1*b3 - 2*b4^2 + 13*b1 - 3*b3 + 12)",
+    "latex": "(b_{1} - b_{2} + 1) (b_{1}^{3} - b_{1}^{2} b_{3} - b_{1} b_{4}^{2} + b_{3} b_{4}^{2} + 6 b_{1}^{2} - 4 b_{1} b_{3} - 2 b_{4}^{2} + 13 b_{1} - 3 b_{3} + 12)",
+    "degree": 4,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e1-e2] f[e2-e4] f[d1+e4]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}-\\epsilon_{4}} f_{\\delta_{1}+\\epsilon_{4}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1+e4]",
+   "coefficient": {
+    "text": "-b1^4 - b1^3*b2 + b1^2*b3^2 + b1*b2*b3^2 - b1^3*b4 - b1^2*b2*b4 + b1*b3^2*b4 + b2*b3^2*b4 - 13*b1^3 - 8*b1^2*b2 + 3*b1^2*b3 + 3*b1*b2*b3 + 8*b1*b3^2 + 3*b2*b3^2 - 10*b1^2*b4 - 5*b1*b2*b4 + 3*b1*b3*b4 + 3*b2*b3*b4 + 5*b3^2*b4 - 59*b1^2 - 19*b1*b2 + 24*b1*b3 + 9*b2*b3 + 15*b3^2 - 29*b1*b4 - 4*b2*b4 + 15*b3*b4 - 107*b1 - 12*b2 + 45*b3 - 20*b4 - 60",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 + b4 + 3)*(b1 - b3 + 1)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{3} + 1)",
+    "degree": 4,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1-e2] f[e2+e4] f[d1-e4]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{4}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e4]",
+   "coefficient": {
+    "text": "-b1^4 - b1^3*b2 + b1^2*b3^2 + b1*b2*b3^2 + b1^3*b4 + b1^2*b2*b4 - b1*b3^2*b4 - b2*b3^2*b4 - 13*b1^3 - 8*b1^2*b2 + 3*b1^2*b3 + 3*b1*b2*b3 + 8*b1*b3^2 + 3*b2*b3^2 + 10*b1^2*b4 + 5*b1*b2*b4 - 3*b1*b3*b4 - 3*b2*b3*b4 - 5*b3^2*b4 - 59*b1^2 - 19*b1*b2 + 24*b1*b3 + 9*b2*b3 + 15*b3^2 + 29*b1*b4 + 4*b2*b4 - 15*b3*b4 - 107*b1 - 12*b2 + 45*b3 + 20*b4 - 60",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 - b3 + 1)*(b1 - b4 + 3)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} - b_{3} + 1) (b_{1} - b_{4} + 3)",
+    "degree": 4,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1-e2] f[e2+e3] f[d1-e3]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{2}+\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{3}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e3]",
+   "coefficient": {
+    "text": "-b1^4 - b1^3*b2 + b1^3*b3 + b1^2*b2*b3 + b1^2*b4^2 + b1*b2*b4^2 - b1*b3*b4^2 - b2*b3*b4^2 - 11*b1^3 - 6*b1^2*b2 + 9*b1^2*b3 + 4*b1*b2*b3 + 7*b1*b4^2 + 2*b2*b4^2 - 5*b3*b4^2 - 43*b1^2 - 13*b1*b2 + 23*b1*b3 + 3*b2*b3 + 10*b4^2 - 77*b1 - 12*b2 + 15*b3 - 60",
+    "factored": "-(b1 + b2 + 5)*(b1^3 - b1^2*b3 - b1*b4^2 + b3*b4^2 + 6*b1^2 - 4*b1*b3 - 2*b4^2 + 13*b1 - 3*b3 + 12)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1}^{3} - b_{1}^{2} b_{3} - b_{1} b_{4}^{2} + b_{3} b_{4}^{2} + 6 b_{1}^{2} - 4 b_{1} b_{3} - 2 b_{4}^{2} + 13 b_{1} - 3 b_{3} + 12)",
+    "degree": 4,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e1-e2] f[e1+e2] f[d1-e1]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\epsilon_{1}+\\epsilon_{2}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^4 - b1^2*b3^2 - b1^2*b4^2 + b3^2*b4^2 + 10*b1^3 + b1^2*b2 - b1^2*b3 - 5*b1*b3^2 - b2*b3^2 - 5*b1*b4^2 + b3*b4^2 + 40*b1^2 + 5*b1*b2 - 5*b1*b3 - 3*b2*b3 - 7*b3^2 - 6*b4^2 + 75*b1 + 4*b2 - 9*b3 + 52",
+    "factored": "b1^4 - b1^2*b3^2 - b1^2*b4^2 + b3^2*b4^2 + 10*b1^3 + b1^2*b2 - b1^2*b3 - 5*b1*b3^2 - b2*b3^2 - 5*b1*b4^2 + b3*b4^2 + 40*b1^2 + 5*b1*b2 - 5*b1*b3 - 3*b2*b3 - 7*b3^2 - 6*b4^2 + 75*b1 + 4*b2 - 9*b3 + 52",
+    "latex": "b_{1}^{4} - b_{1}^{2} b_{3}^{2} - b_{1}^{2} b_{4}^{2} + b_{3}^{2} b_{4}^{2} + 10 b_{1}^{3} + b_{1}^{2} b_{2} - b_{1}^{2} b_{3} - 5 b_{1} b_{3}^{2} - b_{2} b_{3}^{2} - 5 b_{1} b_{4}^{2} + b_{3} b_{4}^{2} + 40 b_{1}^{2} + 5 b_{1} b_{2} - 5 b_{1} b_{3} - 3 b_{2} b_{3} - 7 b_{3}^{2} - 6 b_{4}^{2} + 75 b_{1} + 4 b_{2} - 9 b_{3} + 52",
+    "degree": 4,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e2-e4] f[e1+e4] f[d1-e2]",
+   "latex": "f_{\\epsilon_{2}-\\epsilon_{4}} f_{\\epsilon_{1}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "b1^4 - b1^3*b2 - b1^2*b3^2 + b1*b2*b3^2 - b1^3*b4 + b1^2*b2*b4 + b1*b3^2*b4 - b2*b3^2*b4 + 9*b1^3 - 8*b1^2*b2 - 3*b1^2*b3 + 3*b1*b2*b3 - 4*b1*b3^2 + 3*b2*b3^2 - 6*b1^2*b4 + 5*b1*b2*b4 + 3*b1*b3*b4 - 3*b2*b3*b4 + b3^2*b4 + 27*b1^2 - 19*b1*b2 - 12*b1*b3 + 9*b2*b3 - 3*b3^2 - 9*b1*b4 + 4*b2*b4 + 3*b3*b4 + 31*b1 - 12*b2 - 9*b3 - 4*b4 + 12",
+    "factored": "(b1 + b3 + 4)*(b1 - b2 + 1)*(b1 - b3 + 1)*(b1 - b4 + 3)",
+    "latex": "(b_{1} + b_{3} + 4) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 1) (b_{1} - b_{4} + 3)",
+    "degree": 4,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e2+e4] f[e1-e4] f[d1-e2]",
+   "latex": "f_{\\epsilon_{2}+\\epsilon_{4}} f_{\\epsilon_{1}-\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "b1^4 - b1^3*b2 - b1^2*b3^2 + b1*b2*b3^2 + b1^3*b4 - b1^2*b2*b4 - b1*b3^2*b4 + b2*b3^2*b4 + 9*b1^3 - 8*b1^2*b2 - 3*b1^2*b3 + 3*b1*b2*b3 - 4*b1*b3^2 + 3*b2*b3^2 + 6*b1^2*b4 - 5*b1*b2*b4 - 3*b1*b3*b4 + 3*b2*b3*b4 - b3^2*b4 + 27*b1^2 - 19*b1*b2 - 12*b1*b3 + 9*b2*b3 - 3*b3^2 + 9*b1*b4 - 4*b2*b4 - 3*b3*b4 + 31*b1 - 12*b2 - 9*b3 + 4*b4 + 12",
+    "factored": "(b1 + b3 + 4)*(b1 + b4 + 3)*(b1 - b2 + 1)*(b1 - b3 + 1)",
+    "latex": "(b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 1)",
+    "degree": 4,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1-e3] f[e2+e3] f[d1-e2]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\epsilon_{2}+\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "b1^4 - b1^3*b2 + b1^3*b3 - b1^2*b2*b3 - b1^2*b4^2 + b1*b2*b4^2 - b1*b3*b4^2 + b2*b3*b4^2 + 9*b1^3 - 10*b1^2*b2 + 7*b1^2*b3 - 6*b1*b2*b3 - 3*b1*b4^2 + 4*b2*b4^2 - b3*b4^2 + 27*b1^2 - 33*b1*b2 + 13*b1*b3 - 9*b2*b3 + 2*b4^2 + 23*b1 - 36*b2 + 3*b3 - 12",
+    "factored": "b1^4 - b1^3*b2 + b1^3*b3 - b1^2*b2*b3 - b1^2*b4^2 + b1*b2*b4^2 - b1*b3*b4^2 + b2*b3*b4^2 + 9*b1^3 - 10*b1^2*b2 + 7*b1^2*b3 - 6*b1*b2*b3 - 3*b1*b4^2 + 4*b2*b4^2 - b3*b4^2 + 27*b1^2 - 33*b1*b2 + 13*b1*b3 - 9*b2*b3 + 2*b4^2 + 23*b1 - 36*b2 + 3*b3 - 12",
+    "latex": "b_{1}^{4} - b_{1}^{3} b_{2} + b_{1}^{3} b_{3} - b_{1}^{2} b_{2} b_{3} - b_{1}^{2} b_{4}^{2} + b_{1} b_{2} b_{4}^{2} - b_{1} b_{3} b_{4}^{2} + b_{2} b_{3} b_{4}^{2} + 9 b_{1}^{3} - 10 b_{1}^{2} b_{2} + 7 b_{1}^{2} b_{3} - 6 b_{1} b_{2} b_{3} - 3 b_{1} b_{4}^{2} + 4 b_{2} b_{4}^{2} - b_{3} b_{4}^{2} + 27 b_{1}^{2} - 33 b_{1} b_{2} + 13 b_{1} b_{3} - 9 b_{2} b_{3} + 2 b_{4}^{2} + 23 b_{1} - 36 b_{2} + 3 b_{3} - 12",
+    "degree": 4,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e1-e3] f[e1+e3] f[d1-e1]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\epsilon_{1}+\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^4 - b1^2*b2^2 - b1^2*b4^2 + b2^2*b4^2 + 10*b1^3 - 4*b1^2*b2 - 5*b1*b2^2 - b2^2*b3 - 5*b1*b4^2 + 4*b2*b4^2 + b3*b4^2 + 34*b1^2 - 20*b1*b2 - 8*b2^2 - 4*b2*b3 - 2*b4^2 + 45*b1 - 32*b2 - 3*b3 + 12",
+    "factored": "b1^4 - b1^2*b2^2 - b1^2*b4^2 + b2^2*b4^2 + 10*b1^3 - 4*b1^2*b2 - 5*b1*b2^2 - b2^2*b3 - 5*b1*b4^2 + 4*b2*b4^2 + b3*b4^2 + 34*b1^2 - 20*b1*b2 - 8*b2^2 - 4*b2*b3 - 2*b4^2 + 45*b1 - 32*b2 - 3*b3 + 12",
+    "latex": "b_{1}^{4} - b_{1}^{2} b_{2}^{2} - b_{1}^{2} b_{4}^{2} + b_{2}^{2} b_{4}^{2} + 10 b_{1}^{3} - 4 b_{1}^{2} b_{2} - 5 b_{1} b_{2}^{2} - b_{2}^{2} b_{3} - 5 b_{1} b_{4}^{2} + 4 b_{2} b_{4}^{2} + b_{3} b_{4}^{2} + 34 b_{1}^{2} - 20 b_{1} b_{2} - 8 b_{2}^{2} - 4 b_{2} b_{3} - 2 b_{4}^{2} + 45 b_{1} - 32 b_{2} - 3 b_{3} + 12",
+    "degree": 4,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e1-e4] f[e1+e4] f[d1-e1]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{4}} f_{\\epsilon_{1}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{1}}",
+   "pbw_degree": 3,
+   "odd_factor": "f[d1-e1]",
+   "coefficient": {
+    "text": "b1^4 - b1^2*b2^2 - b1^2*b3^2 + b2^2*b3^2 + 10*b1^3 - 3*b1^2*b2 - 5*b1*b2^2 - 3*b1^2*b3 + 3*b2^2*b3 - 5*b1*b3^2 + 3*b2*b3^2 + 33*b1^2 - 15*b1*b2 - 4*b2^2 - 15*b1*b3 + 9*b2*b3 - 4*b3^2 + 40*b1 - 12*b2 - 12*b3 + 16",
+    "factored": "(b1 + b2 + 4)*(b1 + b3 + 4)*(b1 - b2 + 1)*(b1 - b3 + 1)",
+    "latex": "(b_{1} + b_{2} + 4) (b_{1} + b_{3} + 4) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 1)",
+    "degree": 4,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1-e2] f[d1+e2]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}} f_{\\delta_{1}+\\epsilon_{2}}",
+   "pbw_degree": 2,
+   "odd_factor": "f[d1+e2]",
+   "coefficient": {
+    "text": "-b1^5 - b1^4*b2 + b1^3*b3^2 + b1^2*b2*b3^2 + b1^3*b4^2 + b1^2*b2*b4^2 - b1*b3^2*b4^2 - b2*b3^2*b4^2 - 17*b1^4 - 12*b1^3*b2 + 2*b1^3*b3 + 2*b1^2*b2*b3 + 11*b1^2*b3^2 + 6*b1*b2*b3^2 + 11*b1^2*b4^2 + 6*b1*b2*b4^2 - 2*b1*b3*b4^2 - 2*b2*b3*b4^2 - 5*b3^2*b4^2 - 113*b1^3 - 53*b1^2*b2 + 22*b1^2*b3 + 12*b1*b2*b3 + 39*b1*b3^2 + 9*b2*b3^2 + 38*b1*b4^2 + 8*b2*b4^2 - 10*b3*b4^2 - 367*b1^2 - 102*b1*b2 + 78*b1*b3 + 18*b2*b3 + 45*b3^2 + 40*b4^2 - 582*b1 - 72*b2 + 90*b3 - 360",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 + b4 + 3)*(b1 - b3 + 2)*(b1 - b4 + 3)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3)",
+    "degree": 5,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1-e3] f[d1+e3]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{3}} f_{\\delta_{1}+\\epsilon_{3}}",
+   "pbw_degree": 2,
+   "odd_factor": "f[d1+e3]",
+   "coefficient": {
+    "text": "-b1^5 + b1^3*b2^2 - b1^4*b3 + b1^2*b2^2*b3 + b1^3*b4^2 - b1*b2^2*b4^2 + b1^2*b3*b4^2 - b2^2*b3*b4^2 - 15*b1^4 + 5*b1^3*b2 + 10*b1^2*b2^2 - 11*b1^3*b3 + 5*b1^2*b2*b3 + 6*b1*b2^2*b3 + 9*b1^2*b4^2 - 5*b1*b2*b4^2 - 4*b2^2*b4^2 + 5*b1*b3*b4^2 - 5*b2*b3*b4^2 - 83*b1^3 + 50*b1^2*b2 + 33*b1*b2^2 - 39*b1^2*b3 + 30*b1*b2*b3 + 9*b2^2*b3 + 20*b1*b4^2 - 20*b2*b4^2 - 201*b1^2 + 165*b1*b2 + 36*b2^2 - 45*b1*b3 + 45*b2*b3 - 180*b1 + 180*b2",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 + b4 + 3)*(b1 - b2)*(b1 - b4 + 3)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{2}) (b_{1} - b_{4} + 3)",
+    "degree": 5,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1-e4] f[d1+e4]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{4}} f_{\\delta_{1}+\\epsilon_{4}}",
+   "pbw_degree": 2,
+   "odd_factor": "f[d1+e4]",
+   "coefficient": {
+    "text": "-b1^5 + b1^3*b2^2 + b1^3*b3^2 - b1*b2^2*b3^2 - b1^4*b4 + b1^2*b2^2*b4 + b1^2*b3^2*b4 - b2^2*b3^2*b4 - 14*b1^4 + 4*b1^3*b2 + 8*b1^2*b2^2 + 3*b1^3*b3 - 3*b1*b2^2*b3 + 9*b1^2*b3^2 - 4*b1*b2*b3^2 - 3*b2^2*b3^2 - 11*b1^3*b4 + 4*b1^2*b2*b4 + 5*b1*b2^2*b4 + 3*b1^2*b3*b4 - 3*b2^2*b3*b4 + 6*b1*b3^2*b4 - 4*b2*b3^2*b4 - 72*b1^3 + 32*b1^2*b2 + 19*b1*b2^2 + 27*b1^2*b3 - 12*b1*b2*b3 - 9*b2^2*b3 + 23*b1*b3^2 - 12*b2*b3^2 - 39*b1^2*b4 + 20*b1*b2*b4 + 4*b2^2*b4 + 18*b1*b3*b4 - 12*b2*b3*b4 + 5*b3^2*b4 - 166*b1^2 + 76*b1*b2 + 12*b2^2 + 69*b1*b3 - 36*b2*b3 + 15*b3^2 - 49*b1*b4 + 16*b2*b4 + 15*b3*b4 - 167*b1 + 48*b2 + 45*b3 - 20*b4 - 60",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 + b4 + 3)*(b1 - b2 + 1)*(b1 - b3 + 1)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 1)",
+    "degree": 5,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1+e4] f[d1-e4]",
+   "latex": "f_{\\epsilon_{1}+\\epsilon_{4}} f_{\\delta_{1}-\\epsilon_{4}}",
+   "pbw_degree": 2,
+   "odd_factor": "f[d1-e4]",
+   "coefficient": {
+    "text": "-b1^5 + b1^3*b2^2 + b1^3*b3^2 - b1*b2^2*b3^2 + b1^4*b4 - b1^2*b2^2*b4 - b1^2*b3^2*b4 + b2^2*b3^2*b4 - 14*b1^4 + 4*b1^3*b2 + 8*b1^2*b2^2 + 3*b1^3*b3 - 3*b1*b2^2*b3 + 9*b1^2*b3^2 - 4*b1*b2*b3^2 - 3*b2^2*b3^2 + 11*b1^3*b4 - 4*b1^2*b2*b4 - 5*b1*b2^2*b4 - 3*b1^2*b3*b4 + 3*b2^2*b3*b4 - 6*b1*b3^2*b4 + 4*b2*b3^2*b4 - 72*b1^3 + 32*b1^2*b2 + 19*b1*b2^2 + 27*b1^2*b3 - 12*b1*b2*b3 - 9*b2^2*b3 + 23*b1*b3^2 - 12*b2*b3^2 + 39*b1^2*b4 - 20*b1*b2*b4 - 4*b2^2*b4 - 18*b1*b3*b4 + 12*b2*b3*b4 - 5*b3^2*b4 - 166*b1^2 + 76*b1*b2 + 12*b2^2 + 69*b1*b3 - 36*b2*b3 + 15*b3^2 + 49*b1*b4 - 16*b2*b4 - 15*b3*b4 - 167*b1 + 48*b2 + 45*b3 + 20*b4 - 60",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 - b2 + 1)*(b1 - b3 + 1)*(b1 - b4 + 3)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 1) (b_{1} - b_{4} + 3)",
+    "degree": 5,
+    "linear_factors_only": true
+   }
+  },
+  {
+   "word": "f[e1+e3] f[d1-e3]",
+   "latex": "f_{\\epsilon_{1}+\\epsilon_{3}} f_{\\delta_{1}-\\epsilon_{3}}",
+   "pbw_degree": 2,
+   "odd_factor": "f[d1-e3]",
+   "coefficient": {
+    "text": "-b1^5 + b1^3*b2^2 + b1^4*b3 - b1^2*b2^2*b3 + b1^3*b4^2 - b1*b2^2*b4^2 - b1^2*b3*b4^2 + b2^2*b3*b4^2 - 12*b1^4 + 4*b1^3*b2 + 6*b1^2*b2^2 + 10*b1^3*b3 - 4*b1^2*b2*b3 - 4*b1*b2^2*b3 + 8*b1^2*b4^2 - 4*b1*b2*b4^2 - 2*b2^2*b4^2 - 6*b1*b3*b4^2 + 4*b2*b3*b4^2 - 54*b1^3 + 24*b1^2*b2 + 13*b1*b2^2 + 32*b1^2*b3 - 16*b1*b2*b3 - 3*b2^2*b3 + 17*b1*b4^2 - 8*b2*b4^2 - 5*b3*b4^2 - 120*b1^2 + 52*b1*b2 + 12*b2^2 + 38*b1*b3 - 12*b2*b3 + 10*b4^2 - 137*b1 + 48*b2 + 15*b3 - 60",
+    "factored": "-(b1 + b2 + 5)*(b1 - b2 + 1)*(b1^3 - b1^2*b3 - b1*b4^2 + b3*b4^2 + 6*b1^2 - 4*b1*b3 - 2*b4^2 + 13*b1 - 3*b3 + 12)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} - b_{2} + 1) (b_{1}^{3} - b_{1}^{2} b_{3} - b_{1} b_{4}^{2} + b_{3} b_{4}^{2} + 6 b_{1}^{2} - 4 b_{1} b_{3} - 2 b_{4}^{2} + 13 b_{1} - 3 b_{3} + 12)",
+    "degree": 5,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[e1+e2] f[d1-e2]",
+   "latex": "f_{\\epsilon_{1}+\\epsilon_{2}} f_{\\delta_{1}-\\epsilon_{2}}",
+   "pbw_degree": 2,
+   "odd_factor": "f[d1-e2]",
+   "coefficient": {
+    "text": "-b1^5 + b1^4*b2 + b1^3*b3^2 - b1^2*b2*b3^2 + b1^3*b4^2 - b1^2*b2*b4^2 - b1*b3^2*b4^2 + b2*b3^2*b4^2 - 10*b1^4 + 9*b1^3*b2 + b1^3*b3 - b1^2*b2*b3 + 5*b1^2*b3^2 - 4*b1*b2*b3^2 + 6*b1^2*b4^2 - 5*b1*b2*b4^2 - b1*b3*b4^2 + b2*b3*b4^2 - b3^2*b4^2 - 40*b1^3 + 31*b1^2*b2 + 3*b1^2*b3 - 2*b1*b2*b3 + 7*b1*b3^2 - 3*b2*b3^2 + 11*b1*b4^2 - 6*b2*b4^2 - b3*b4^2 - 82*b1^2 + 51*b1*b2 - b1*b3 + 3*b2*b3 + 3*b3^2 + 6*b4^2 - 87*b1 + 36*b2 - 3*b3 - 36",
+    "factored": "-(b1 + b3 + 3)*(b1 - b2 + 1)*(b1^3 - b1^2*b3 - b1*b4^2 + b3*b4^2 + 6*b1^2 - 4*b1*b3 - 2*b4^2 + 13*b1 - 3*b3 + 12)",
+    "latex": "-(b_{1} + b_{3} + 3) (b_{1} - b_{2} + 1) (b_{1}^{3} - b_{1}^{2} b_{3} - b_{1} b_{4}^{2} + b_{3} b_{4}^{2} + 6 b_{1}^{2} - 4 b_{1} b_{3} - 2 b_{4}^{2} + 13 b_{1} - 3 b_{3} + 12)",
+    "degree": 5,
+    "linear_factors_only": false
+   }
+  },
+  {
+   "word": "f[d1+e1]",
+   "latex": "f_{\\delta_{1}+\\epsilon_{1}}",
+   "pbw_degree": 1,
+   "odd_factor": "f[d1+e1]",
+   "coefficient": {
+    "text": "-b1^6 + b1^4*b2^2 + b1^4*b3^2 - b1^2*b2^2*b3^2 + b1^4*b4^2 - b1^2*b2^2*b4^2 - b1^2*b3^2*b4^2 + b2^2*b3^2*b4^2 - 18*b1^5 + 4*b1^4*b2 + 12*b1^3*b2^2 + 2*b1^4*b3 - 2*b1^2*b2^2*b3 + 12*b1^3*b3^2 - 4*b1^2*b2*b3^2 - 6*b1*b2^2*b3^2 + 12*b1^3*b4^2 - 4*b1^2*b2*b4^2 - 6*b1*b2^2*b4^2 - 2*b1^2*b3*b4^2 + 2*b2^2*b3*b4^2 - 6*b1*b3^2*b4^2 + 4*b2*b3^2*b4^2 - 130*b1^4 + 48*b1^3*b2 + 53*b1^2*b2^2 + 24*b1^3*b3 - 8*b1^2*b2*b3 - 12*b1*b2^2*b3 + 50*b1^2*b3^2 - 24*b1*b2*b3^2 - 9*b2^2*b3^2 + 49*b1^2*b4^2 - 24*b1*b2*b4^2 - 8*b2^2*b4^2 - 12*b1*b3*b4^2 + 8*b2*b3*b4^2 - 5*b3^2*b4^2 - 480*b1^3 + 212*b1^2*b2 + 102*b1*b2^2 + 100*b1^2*b3 - 48*b1*b2*b3 - 18*b2^2*b3 + 84*b1*b3^2 - 36*b2*b3^2 + 78*b1*b4^2 - 32*b2*b4^2 - 10*b3*b4^2 - 949*b1^2 + 408*b1*b2 + 72*b2^2 + 168*b1*b3 - 72*b2*b3 + 45*b3^2 + 40*b4^2 - 942*b1 + 288*b2 + 90*b3 - 360",
+    "factored": "-(b1 + b2 + 5)*(b1 + b3 + 4)*(b1 + b4 + 3)*(b1 - b2 + 1)*(b1 - b3 + 2)*(b1 - b4 + 3)",
+    "latex": "-(b_{1} + b_{2} + 5) (b_{1} + b_{3} + 4) (b_{1} + b_{4} + 3) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2) (b_{1} - b_{4} + 3)",
+    "degree": 6,
+    "linear_factors_only": true
+   }
+  }
+ ],
+ "terms_omitted": false,
+ "seconds": 0.03
+}

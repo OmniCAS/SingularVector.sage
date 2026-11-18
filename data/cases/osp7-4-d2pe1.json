@@ -1,0 +1,239 @@
+{
+ "id": "osp7-4-d2pe1",
+ "algebra": "osp(7|4)",
+ "algebra_latex": "\\mathfrak{osp}(7|4)",
+ "beta": "d2+e1",
+ "beta_latex": "\\delta_{2}+\\epsilon_{1}",
+ "conventions": "generators of Defs/OSP.lean; lam = (a_N..a_1 | b_1..b_M) = lam(T a a); f_gamma = root vector of weight -gamma; PBW order: even root vectors (by height), then the odd one",
+ "rho": [
+  "-3/2",
+  "-5/2",
+  "5/2",
+  "3/2",
+  "1/2"
+ ],
+ "rho_latex": [
+  "-\\frac{3}{2}",
+  "-\\frac{5}{2}",
+  "\\frac{5}{2}",
+  "\\frac{3}{2}",
+  "\\frac{1}{2}"
+ ],
+ "simple_roots_latex": [
+  "\\delta_{2}-\\delta_{1}",
+  "\\delta_{1}-\\epsilon_{1}",
+  "\\epsilon_{1}-\\epsilon_{2}",
+  "\\epsilon_{2}-\\epsilon_{3}",
+  "\\epsilon_{3}"
+ ],
+ "hyperplane": {
+  "text": "a2 = b1 + 4",
+  "latex": "a_{2} = b_{1} + 4"
+ },
+ "free_variables": [
+  "a1",
+  "b1",
+  "b2",
+  "b3"
+ ],
+ "pbw_order": [
+  {
+   "name": "f[e3]",
+   "latex": "f_{\\epsilon_{3}}",
+   "odd": false
+  },
+  {
+   "name": "f[e2-e3]",
+   "latex": "f_{\\epsilon_{2}-\\epsilon_{3}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1-e2]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{2}}",
+   "odd": false
+  },
+  {
+   "name": "f[d2-d1]",
+   "latex": "f_{\\delta_{2}-\\delta_{1}}",
+   "odd": false
+  },
+  {
+   "name": "f[e2]",
+   "latex": "f_{\\epsilon_{2}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1-e3]",
+   "latex": "f_{\\epsilon_{1}-\\epsilon_{3}}",
+   "odd": false
+  },
+  {
+   "name": "f[e2+e3]",
+   "latex": "f_{\\epsilon_{2}+\\epsilon_{3}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1]",
+   "latex": "f_{\\epsilon_{1}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1+e3]",
+   "latex": "f_{\\epsilon_{1}+\\epsilon_{3}}",
+   "odd": false
+  },
+  {
+   "name": "f[e1+e2]",
+   "latex": "f_{\\epsilon_{1}+\\epsilon_{2}}",
+   "odd": false
+  },
+  {
+   "name": "f[2d1]",
+   "latex": "f_{2\\delta_{1}}",
+   "odd": false
+  },
+  {
+   "name": "f[d2+d1]",
+   "latex": "f_{\\delta_{2}+\\delta_{1}}",
+   "odd": false
+  },
+  {
+   "name": "f[2d2]",
+   "latex": "f_{2\\delta_{2}}",
+   "odd": false
+  },
+  {
+   "name": "f[d1-e1]",
+   "latex": "f_{\\delta_{1}-\\epsilon_{1}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1-e2]",
+   "latex": "f_{\\delta_{1}-\\epsilon_{2}}",
+   "odd": true
+  },
+  {
+   "name": "f[d2-e1]",
+   "latex": "f_{\\delta_{2}-\\epsilon_{1}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1-e3]",
+   "latex": "f_{\\delta_{1}-\\epsilon_{3}}",
+   "odd": true
+  },
+  {
+   "name": "f[d2-e2]",
+   "latex": "f_{\\delta_{2}-\\epsilon_{2}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1]",
+   "latex": "f_{\\delta_{1}}",
+   "odd": true
+  },
+  {
+   "name": "f[d2-e3]",
+   "latex": "f_{\\delta_{2}-\\epsilon_{3}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1+e3]",
+   "latex": "f_{\\delta_{1}+\\epsilon_{3}}",
+   "odd": true
+  },
+  {
+   "name": "f[d2]",
+   "latex": "f_{\\delta_{2}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1+e2]",
+   "latex": "f_{\\delta_{1}+\\epsilon_{2}}",
+   "odd": true
+  },
+  {
+   "name": "f[d2+e3]",
+   "latex": "f_{\\delta_{2}+\\epsilon_{3}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1+e1]",
+   "latex": "f_{\\delta_{1}+\\epsilon_{1}}",
+   "odd": true
+  },
+  {
+   "name": "f[d2+e2]",
+   "latex": "f_{\\delta_{2}+\\epsilon_{2}}",
+   "odd": true
+  },
+  {
+   "name": "f[d2+e1]",
+   "latex": "f_{\\delta_{2}+\\epsilon_{1}}",
+   "odd": true
+  }
+ ],
+ "weight_space_dim": 80,
+ "equations": 165,
+ "top_degree": 8,
+ "symbol_blocks": {
+  "1": [
+   1,
+   2,
+   1
+  ],
+  "2": [
+   6,
+   14,
+   6
+  ],
+  "3": [
+   16,
+   39,
+   16
+  ],
+  "4": [
+   22,
+   49,
+   22
+  ],
+  "5": [
+   19,
+   39,
+   19
+  ],
+  "6": [
+   11,
+   17,
+   11
+  ],
+  "7": [
+   4,
+   5,
+   4
+  ],
+  "8": [
+   1,
+   0,
+   0
+  ]
+ },
+ "statements": {
+  "symbol_criterion": true,
+  "exactly_one_on_H": true,
+  "every_lambda": true
+ },
+ "normalisation": "coefficient of the word in the simple root vectors = 1",
+ "n_terms": 80,
+ "n_linear_factor_coefficients": 50,
+ "f_beta_coefficient": {
+  "text": "-2*a1*b1^6 + 2*b1^7 + 2*a1*b1^4*b2^2 - 2*b1^5*b2^2 + 2*a1*b1^4*b3^2 - 2*b1^5*b3^2 - 2*a1*b1^2*b2^2*b3^2 + 2*b1^3*b2^2*b3^2 - 29*a1*b1^5 + 39*b1^6 + 6*a1*b1^4*b2 - 6*b1^5*b2 + 19*a1*b1^3*b2^2 - 29*b1^4*b2^2 + 2*a1*b1^4*b3 - 2*b1^5*b3 - 2*a1*b1^2*b2^2*b3 + 2*b1^3*b2^2*b3 + 19*a1*b1^3*b3^2 - 29*b1^4*b3^2 - 6*a1*b1^2*b2*b3^2 + 6*b1^3*b2*b3^2 - 9*a1*b1*b2^2*b3^2 + 19*b1^2*b2^2*b3^2 - 170*a1*b1^4 + 315*b1^5 + 57*a1*b1^3*b2 - 87*b1^4*b2 + 67*a1*b1^2*b2^2 - 162*b1^3*b2^2 + 19*a1*b1^3*b3 - 29*b1^4*b3 - 6*a1*b1^2*b2*b3 + 6*b1^3*b2*b3 - 9*a1*b1*b2^2*b3 + 19*b1^2*b2^2*b3 + 63*a1*b1^2*b3^2 - 158*b1^3*b3^2 - 27*a1*b1*b2*b3^2 + 57*b1^2*b2*b3^2 - 10*a1*b2^2*b3^2 + 55*b1*b2^2*b3^2 - 515*a1*b1^3 + 1365*b1^4 + 201*a1*b1^2*b2 - 486*b1^3*b2 + 104*a1*b1*b2^2 - 439*b1^2*b2^2 + 63*a1*b1^2*b3 - 158*b1^3*b3 - 27*a1*b1*b2*b3 + 57*b1^2*b2*b3 - 10*a1*b2^2*b3 + 55*b1*b2^2*b3 + 86*a1*b1*b3^2 - 401*b1^2*b3^2 - 30*a1*b2*b3^2 + 165*b1*b2*b3^2 + 50*b2^2*b3^2 - 848*a1*b1^2 + 3423*b1^3 + 312*a1*b1*b2 - 1317*b1^2*b2 + 60*a1*b2^2 - 580*b1*b2^2 + 86*a1*b1*b3 - 401*b1^2*b3 - 30*a1*b2*b3 + 165*b1*b2*b3 + 50*b2^2*b3 + 40*a1*b3^2 - 470*b1*b3^2 + 150*b2*b3^2 - 716*a1*b1 + 4956*b1^2 + 180*a1*b2 - 1740*b1*b2 - 300*b2^2 + 40*a1*b3 - 470*b1*b3 + 150*b2*b3 - 200*b3^2 - 240*a1 + 3820*b1 - 900*b2 - 200*b3 + 1200",
+  "factored": "-(2*b1 + 5)*(a1 - b1 - 5)*(b1 + 2)*(b1 + b2 + 4)*(b1 + b3 + 3)*(b1 - b2 + 1)*(b1 - b3 + 2)",
+  "latex": "-(2 b_{1} + 5) (a_{1} - b_{1} - 5) (b_{1} + 2) (b_{1} + b_{2} + 4) (b_{1} + b_{3} + 3) (b_{1} - b_{2} + 1) (b_{1} - b_{3} + 2)",
+  "degree": 7,
+  "linear_factors_only": true
+ },
+ "terms": null,
+ "terms_omitted": true,
+ "seconds": 0.05
+}

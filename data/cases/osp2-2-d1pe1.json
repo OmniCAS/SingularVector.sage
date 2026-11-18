@@ -1,0 +1,86 @@
+{
+ "id": "osp2-2-d1pe1",
+ "algebra": "osp(2|2)",
+ "algebra_latex": "\\mathfrak{osp}(2|2)",
+ "beta": "d1+e1",
+ "beta_latex": "\\delta_{1}+\\epsilon_{1}",
+ "conventions": "generators of Defs/OSP.lean; lam = (a_N..a_1 | b_1..b_M) = lam(T a a); f_gamma = root vector of weight -gamma; PBW order: even root vectors (by height), then the odd one",
+ "rho": [
+  "0",
+  "0"
+ ],
+ "rho_latex": [
+  "0",
+  "0"
+ ],
+ "simple_roots_latex": [
+  "\\delta_{1}-\\epsilon_{1}",
+  "\\delta_{1}+\\epsilon_{1}"
+ ],
+ "hyperplane": {
+  "text": "a1 = b1",
+  "latex": "a_{1} = b_{1}"
+ },
+ "free_variables": [
+  "b1"
+ ],
+ "pbw_order": [
+  {
+   "name": "f[2d1]",
+   "latex": "f_{2\\delta_{1}}",
+   "odd": false
+  },
+  {
+   "name": "f[d1-e1]",
+   "latex": "f_{\\delta_{1}-\\epsilon_{1}}",
+   "odd": true
+  },
+  {
+   "name": "f[d1+e1]",
+   "latex": "f_{\\delta_{1}+\\epsilon_{1}}",
+   "odd": true
+  }
+ ],
+ "weight_space_dim": 1,
+ "equations": 1,
+ "top_degree": 1,
+ "symbol_blocks": {
+  "1": [
+   1,
+   0,
+   0
+  ]
+ },
+ "statements": {
+  "symbol_criterion": true,
+  "exactly_one_on_H": true,
+  "every_lambda": true
+ },
+ "normalisation": "coefficient of the word in the simple root vectors = 1",
+ "n_terms": 1,
+ "n_linear_factor_coefficients": 1,
+ "f_beta_coefficient": {
+  "text": "1",
+  "factored": "1",
+  "latex": "1",
+  "degree": 0,
+  "linear_factors_only": true
+ },
+ "terms": [
+  {
+   "word": "f[d1+e1]",
+   "latex": "f_{\\delta_{1}+\\epsilon_{1}}",
+   "pbw_degree": 1,
+   "odd_factor": "f[d1+e1]",
+   "coefficient": {
+    "text": "1",
+    "factored": "1",
+    "latex": "1",
+    "degree": 0,
+    "linear_factors_only": true
+   }
+  }
+ ],
+ "terms_omitted": false,
+ "seconds": 0.1
+}
